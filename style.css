@@ -147,3 +147,24 @@ nav {
 .button:active {
   background-color: #195f94;
 }
+
+.h1container {  
+  width: 600px;
+  margin: 40px auto 20px auto;
+}
+
+.h1container h1 {
+  color: #121212;
+  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 20px 1rem;
+  text-align: left;
+  font-size: 3.25rem; 
+}
+
+.main-img-container {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
