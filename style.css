@@ -82,4 +82,35 @@ select {
 }
 
 /* Html project Start*/
+html {
+  font-family: "nyt-franklin", "helvetica", "arial", sans-serif;
+  font-size: 65%;
+}
 
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-left-container {
+  font-size: 2rem;
+}
+
+.space-and-cosmos {
+  text-decoration: none;
+  color: black;
+}
+
+.main-logo-container {
+  width: 195px;
+  height: 26px;
+  margin: 6px auto 0;
+}
