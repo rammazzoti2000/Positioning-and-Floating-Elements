@@ -268,7 +268,38 @@ nav {
 .right-social-container li a{
   color: black;
 }
+/* article social media and time stamp end */
 
+/* main article section */
+.first-article-container {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;  
+  height: 100%;
+}
+
+.first-article {
+  margin-left: calc((100% - 600px) / 2);
+  margin-right: 0;
+  width: 600px;
+}
+
+.first-article:first-child {
+  margin-top: 0;
+}
+
+.first-article p {  
+  margin-right: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.9rem;  
+  margin-top: 15px;
+  color: #333333;
+  font-weight: 500;
+  font-family: nyt-imperial;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
 
 
 
