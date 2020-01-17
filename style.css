@@ -91,6 +91,8 @@ header {
   width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #e2e2e2;
+  position: fixed;
+  top: 0;
 }
 
 nav {
@@ -99,6 +101,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 7px 20px;
+  background-color: white;
 }
 
 .nav-left-container {
@@ -150,9 +153,11 @@ nav {
 /* navigation bar ends */
 
 /* main section start */
+
+
 .h1-container {   
   width: 600px;
-  margin: 40px auto 20px auto;
+  margin: 80px auto 20px auto;
 }
 
 .h1-container h1 {
@@ -194,6 +199,7 @@ nav {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 .art-title {
