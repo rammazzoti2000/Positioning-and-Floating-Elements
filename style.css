@@ -271,14 +271,7 @@ nav {
 /* article social media and time stamp end */
 
 /* main article section */
-.first-article-container {
-  width: 1110px;
-  margin-left: auto;
-  margin-right: auto;  
-  height: 100%;
-}
-
-.first-article {
+.article {
   margin-left: calc((100% - 600px) / 2);
   margin-right: 0;
   width: 600px;
@@ -288,7 +281,7 @@ nav {
   margin-top: 0;
 }
 
-.first-article p {  
+.article p {
   margin-right: 0;
   width: 100%;
   max-width: 100%;
@@ -299,6 +292,29 @@ nav {
   font-family: nyt-imperial;
   letter-spacing: 1px;
   line-height: 27px;
+}
+
+.container {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;  
+  height: 100%;
+}
+
+.subscriptions p {
+  width: 500px;
+  font-size: 1.5rem;  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 11px;
+  font-weight: bold;
+}
+
+.empty-line {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  width: 100px;  
 }
 
 
