@@ -185,3 +185,41 @@ nav {
   font-size: 1.3rem;
 }
 /* main section ends */
+
+/* article social media and time stamp start */
+.art-title-container {
+  color: #121212;
+  margin-bottom: 1.5625rem;
+  width: 600px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.art-title {
+  padding-top: 40px;
+}
+
+.art-title p {
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.art-title p a {
+  text-decoration: none;
+  color: #333
+}
+
+.social-bar-container {
+  display: flex;
+  margin-top: 10px;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-social-container ul {
+  list-style: none;
+}
