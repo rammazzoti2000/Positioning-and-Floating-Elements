@@ -86,7 +86,7 @@ html {
   font-family: "nyt-franklin", "helvetica", "arial", sans-serif;
   font-size: 65%;
 }
-
+/* navigation bar start */
 header {
   width: 100%;
   margin: 0 auto;
@@ -147,13 +147,15 @@ nav {
 .button:active {
   background-color: #195f94;
 }
+/* navigation bar ends */
 
-.h1container {  
+/* main section start */
+.h1-container {   
   width: 600px;
   margin: 40px auto 20px auto;
 }
 
-.h1container h1 {
+.h1-container h1 {
   color: #121212;
   font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
   font-weight: 600;
@@ -168,3 +170,18 @@ nav {
   margin: auto;
   width: 80%;
 }
+
+.big-picture-figcap {
+  color: #666;
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  margin: 10px 0 0;
+  text-align: left;
+  font-size: 1.5rem;
+  max-width: 900px;
+  text-align: left;
+}
+
+.inline-figcap {
+  font-size: 1.3rem;
+}
+/* main section ends */
