@@ -171,8 +171,6 @@ nav {
 /* navigation bar ends */
 
 /* main section start */
-
-
 .h1-container {   
   width: 600px;
   margin: 80px auto 20px auto;
@@ -336,22 +334,36 @@ figure {
   height: 100%;
 }
 
+/* Subscriptions inline area */
+.subscriptions {
+  margin: 20px auto;
+}
+
 .subscriptions p {
   width: 500px;
   font-size: 1.5rem;  
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  line-height: 11px;
+  line-height: 6px;
   font-weight: bold;
 }
 
-.empty-line {
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
-  width: 100px;  
+.subscriptions p a {
+  color: rgb(50, 104, 145);
+  text-decoration: none;
 }
 
+.empty-line {
+  width: 72px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
 
+.empty-line-top {
+  margin: 0px auto 18px; 
+}
 
+.empty-line-bottom {
+  margin: 18px auto; 
+}
 
