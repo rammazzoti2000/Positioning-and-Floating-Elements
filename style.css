@@ -290,14 +290,16 @@ figure {
 .right-social-container li:nth-child(5) {
   padding: 5px 12px;
   background-color: transparent;
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-left: 10px;
+  border: none;
 }
 
 .right-social-container li:nth-child(6) {
   background-color: transparent;
-  font-size: 1.7rem;
-  margin-left: 5px;
+  font-size: 2rem;
+  margin-left: 2px;
+  border: none;
 }
 .right-social-container li a{
   color: black;
@@ -414,5 +416,4 @@ figure {
   transition: 0.4s;
   line-height: 38px;
   width: 0px;
-
 }
