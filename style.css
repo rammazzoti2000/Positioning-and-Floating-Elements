@@ -91,6 +91,7 @@ header {
   position: sticky;
   background: white;
   top: 0;
+  z-index: 1;
 }
 
 nav {
@@ -115,7 +116,6 @@ nav {
   border-radius: 5px;
   display: grid;
   margin: 0 5px;
-  height: 32px;
   text-transform: uppercase;
   align-content: center;
 }
@@ -163,7 +163,7 @@ nav {
 .button:active {
   background-color: #195f94;
 }
-/* navigation bar ends */
+/* navigation bar end */
 
 /* main section start */
 .title-header {
@@ -218,11 +218,9 @@ figure {
 .art-title-container {
   color: #121212;
   margin-bottom: 1.5625rem;
-  width: 60%;
-  max-width: 60%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
- 
 }
 
 .art-title {
@@ -259,7 +257,7 @@ figure {
   float: left;
 }
 
-.social-bar-container li:nth-child(2) {
+.social-bar-container li:last-child {
   float: right;
 }
 
@@ -307,10 +305,19 @@ figure {
 /* article social media and time stamp end */
 
 /* main article section */
+.art-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 0 auto;
+}
+
+.art-container-left {
+  text-align: justify;
+}
+
 .article {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
 }
 
 .first-article:first-child {
@@ -326,14 +333,82 @@ figure {
   color: #333333;
   font-weight: 500;
   font-family: nyt-imperial;
-  letter-spacing: .7px;
+  letter-spacing: .4px;
   line-height: 25px;
+}
+
+.article p > a {
+  text-decoration: none;
+  color: rgb(50, 104, 145);
+}
+
+.article p > a:hover {
+  text-decoration: underline;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;  
   height: 100%;
+}
+
+.strong {
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+aside {
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+}
+
+aside > h2 {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.editors-pics-link {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3fr 1fr;
+  align-items: self-end;
+}
+
+.editors-pics-link > img {
+  height: 70px;
+}
+
+@media (max-width: 900px) {
+  .editors-pics-link img {
+    display: none;
+  }
+  .editors-pics-link {
+    grid-template-columns: 0fr 1fr;
+  }
+  aside {
+    width: 65%;
+    text-align: end;
+  }
+  .art-title-container {
+    width: 59%;
+  }
+}
+
+.editors-pics a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.editors-pics-link > h3 {
+  padding-left: 7px;
+}
+
+.editors-pics-link > h3:hover {
+  text-decoration: underline;
 }
 
 /* Subscriptions inline area */
@@ -369,21 +444,85 @@ figure {
   margin: 18px auto; 
 }
 
+.spanning {
+  grid-column: 1 / -1;
+  font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+  width: 940px;
+  margin: 50px auto ;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  padding-top: 32px;
+}
 
-/* search input experimenting */
-.searchBox {
-  height: 40px;
-  border-radius: 40px;
+.spanning > h2 {
+  font-size: 20px;
+  line-height: 0px;
+  margin: 0;
+}
+
+.spanning > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #666666;
+  margin: 14px 0 24px;
+}
+
+.spanning > p:last-child {
+  margin: 32px 0 12px;
+}
+
+#grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 135px 150px 135px 150px;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: contain;
+}
+
+.item {
+  padding: 10px 9px 0px 6px;
+  text-align: justify;
+}
+
+.item > p {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.row2 {
+  grid-row: 2;
+}
+
+.row4 {
+  grid-row: 4;
+}
+
+.inline-fig-container {
+  margin-top: 20px;
+}
+
+#figcap {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+/* animated search input experiment */
+.search-box {
+  height: auto;
+  border-radius: 100%;
   font-size: 1.2rem;
 }
 
-.searchBox:hover > .searchInput {
+.search-box:hover > .search-input {
   width: 200px;
   padding: 0 6px;
   border-bottom: 1px solid;
 }
 
-.searchBox:hover > .searchButton {
+.search-box:hover > .search-button {
   background: #567b95;
   color : white;
   border: 1px solid #326891;
@@ -391,7 +530,7 @@ figure {
 
 }
 
-.searchButton {
+.search-button {
   float: right;
   width: 40px;
   height: 40px;
@@ -405,7 +544,7 @@ figure {
   outline: none;
 }
 
-.searchInput {
+.search-input {
   border:none;
   background: none;
   outline:none;
@@ -414,6 +553,23 @@ figure {
   color: #333333;
   font-size: 1.6rem ;
   transition: 0.4s;
-  line-height: 38px;
+  line-height: 34px;
   width: 0px;
+<<<<<<< HEAD
 }
+=======
+}
+
+@media (max-width: 890px) {
+  .search-box:hover > .search-input {
+    width: 100px;
+  }
+}
+
+.video-container {
+  margin: 60px;
+  border-bottom: 1px solid lightgray;
+  padding: 33px 0;
+  border-top: 1px solid lightgray;
+}
+>>>>>>> 7eda613001b2b64c4263643946467ba1148f63b5
