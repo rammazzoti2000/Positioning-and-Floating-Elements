@@ -448,6 +448,8 @@ aside > h2 {
   width: 940px;
   margin: 50px auto ;
   border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  padding-top: 32px;
 }
 
 .spanning > h2 {
