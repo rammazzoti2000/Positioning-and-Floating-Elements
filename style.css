@@ -382,22 +382,6 @@ aside > h2 {
   height: 70px;
 }
 
-@media (max-width: 900px) {
-  .editors-pics-link img {
-    display: none;
-  }
-  .editors-pics-link {
-    grid-template-columns: 0fr 1fr;
-  }
-  aside {
-    width: 65%;
-    text-align: end;
-  }
-  .art-title-container {
-    width: 59%;
-  }
-}
-
 .editors-pics a {
   text-decoration: none;
   color: #121212;
@@ -445,7 +429,6 @@ aside > h2 {
 }
 
 .spanning {
-  grid-column: 1 / -1;
   font-family: nyt-cheltenham,georgia,times new roman,times,serif;
   width: 940px;
   margin: 50px auto ;
@@ -476,7 +459,7 @@ aside > h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 135px 150px 135px 150px;
-  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background: url("assets/inflation.png") no-repeat;
   background-size: contain;
 }
 
@@ -555,9 +538,6 @@ aside > h2 {
   transition: 0.4s;
   line-height: 34px;
   width: 0px;
-<<<<<<< HEAD
-}
-=======
 }
 
 @media (max-width: 890px) {
@@ -572,4 +552,20 @@ aside > h2 {
   padding: 33px 0;
   border-top: 1px solid lightgray;
 }
->>>>>>> 7eda613001b2b64c4263643946467ba1148f63b5
+
+@media (max-width: 900px) {
+  .editors-pics-link img {
+    display: none;
+  }
+  .editors-pics-link {
+    grid-template-columns: 0fr 1fr;
+  }
+  aside {
+    width: 65%;
+    text-align: end;
+  }
+  .art-title-container {
+    width: 59%;
+  }
+}
+
