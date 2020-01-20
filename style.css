@@ -482,6 +482,15 @@ aside > h2 {
   grid-row: 4;
 }
 
+.inline-fig-container {
+  margin-top: 20px;
+}
+
+#figcap {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* animated search input experiment */
 .search-box {
   height: auto;
