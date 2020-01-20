@@ -433,6 +433,35 @@ aside > h2 {
   margin: 18px auto; 
 }
 
+.inflat-container {
+  display: grid;
+  grid-template-columns: 1fr 1034px 1fr;
+}
+
+.inflat-text-container {
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 145px 331px;
+    /* top: 170px; */
+    background-image: url(assets/inflation.png);
+    background-size: contain;
+    /* max-width: 83%; */
+    height: auto;
+}
+
+.inflat-text-container p {
+  padding: 10px;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 300;
+  color: #000000;
+}
+
+.strong-inflat {
+  font-weight: bold;
+}
 
 /* animated search input experiment */
 .search-box {
