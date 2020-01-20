@@ -341,6 +341,11 @@ figure {
   height: 100%;
 }
 
+.strong {
+  font-weight: 700;
+  margin-top: 40px;
+}
+
 aside {
   position: relative;
   top: 50%;
