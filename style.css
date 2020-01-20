@@ -433,34 +433,53 @@ aside > h2 {
   margin: 18px auto; 
 }
 
-.inflat-container {
+.spanning {
+  grid-column: 1 / -1;
+  font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+  width: 940px;
+  margin: 50px auto ;
+  border-bottom: 1px solid lightgray;
+}
+
+.spanning > h2 {
+  font-size: 20px;
+  line-height: 0px;
+  margin: 0;
+}
+
+.spanning > p {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 14px;
+  color: #666;
+  margin: 30px 0;
+}
+
+#grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1034px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 135px 150px 135px 150px;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: contain;
 }
 
-.inflat-text-container {
-    /* position: relative; */
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: 145px 331px;
-    /* top: 170px; */
-    background-image: url(assets/inflation.png);
-    background-size: contain;
-    /* max-width: 83%; */
-    height: auto;
-}
-
-.inflat-text-container p {
-  padding: 10px;
+.item {
+  padding: 10px 14px 10px 0;
   text-align: justify;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  font-weight: 300;
-  color: #000000;
 }
 
-.strong-inflat {
-  font-weight: bold;
+.item > p {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.row2 {
+  grid-row: 2;
+}
+
+.row4 {
+  grid-row: 4;
 }
 
 /* animated search input experiment */
@@ -517,3 +536,6 @@ aside > h2 {
   }
 }
 
+.video-container {
+  margin: 60px 0;
+}
