@@ -295,13 +295,13 @@ figure {
   align-content: center;
 }
 
-.right-social-container li:nth-child(5) {
+.right-social-container > li:nth-child(5) {
   padding: 5px 12px;
   background-color: transparent;
   margin-left: 10px;
 }
 
-.right-social-container li:nth-child(6) {
+.right-social-container > li:nth-child(6) {
   background-color: transparent;
   margin-left: 5px;
 }
