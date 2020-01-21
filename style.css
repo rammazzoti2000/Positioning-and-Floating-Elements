@@ -361,8 +361,7 @@ aside {
   position: relative;
   top: 50%;
   margin: 0 auto;
-  width: 70%;
-  height: 100%;
+  width: 70%;  
 }
 
 aside > h2 {
@@ -532,6 +531,49 @@ aside > h2 {
   height: 40px;
   margin: 0;
 }
+
+.main-extra-container {
+  width: 90%;
+  margin:0 auto;
+}
+
+.main-extra-container .left-extra-container {
+  float: left;
+}
+
+.left-extra-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.elem {
+  width: 220px;
+  height: auto;
+  padding: 10px;
+}
+
+.sub-elem {
+  text-align: end;
+  color: #888888;
+}
+
+.fig-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.6;
+  width: 75%;
+}
+
+.fig-title > time {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #888888;
+  display: block;
+}
+
+
 
 /* animated search input experiment */
 .search-box {
