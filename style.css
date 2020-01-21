@@ -78,7 +78,7 @@ select {
 
 /* Html project Start */
 html {
-  font-family: "nyt-franklin", "helvetica", "arial", sans-serif;
+  font-family: nyt-franklin, "helvetica", "arial", sans-serif;
   font-size: 65%;
   height: 100%;
 }
@@ -282,6 +282,7 @@ figure {
   margin-left: 20px;
   padding: 5px 8px;
   background-color: #eee;
+  color: #121212;
   border-radius: 100%;
 }
 
@@ -324,7 +325,7 @@ figure {
   margin-top: 15px;
   color: #333;
   font-weight: 500;
-  font-family: "nyt-imperial", sans-serif;
+  font-family: nyt-imperial, "arial", sans-serif;
   letter-spacing: 0.4px;
   line-height: 25px;
 }
