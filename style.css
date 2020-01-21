@@ -537,8 +537,8 @@ aside > h2 {
 /* on hover text-decoration regroup (abstraction) */
 .space-and-cosmos:hover,
 .editors-pics-link > h3:hover,
-.art-title p a:hover,
-.extra-container a:hover {
+.extra-container a:hover,
+.art-title p a:hover {
   text-decoration: underline;
 }
 
