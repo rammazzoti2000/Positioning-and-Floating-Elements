@@ -88,8 +88,9 @@ html {
 }
 /* navigation bar start */
 header {
-  position: sticky;
+  position: fixed;
   background: white;
+  width: 100%;
   top: 0;
   z-index: 1;
 }
@@ -101,7 +102,7 @@ nav {
   align-items: center; */
   padding: 7px 15px;
   background-color: white;
-  box-shadow: 0px -2px 10px grey;
+  box-shadow: 0 15px 25px -25px black;
 }
 
 .nav-container {
@@ -167,7 +168,7 @@ nav {
 
 /* main section start */
 .title-header {
-  margin: 30px auto 20px;
+  margin: 80px auto 20px;
 }
 
 .h1-container {   
@@ -533,30 +534,51 @@ aside > h2 {
 }
 
 .main-extra-container {
-  width: 90%;
-  margin:0 auto;
+  width: 86%;
+  margin: 0 auto;
 }
 
-.main-extra-container .left-extra-container {
+.extra-container {
+  width: 65%;
+  margin: 0 auto;
   float: left;
+  border-top: 1px solid;
+  padding-top: 10px;
+}
+
+.extra-container .left-extra-container {
+  float: left;
+}
+
+.extra-container a{
+  color: #121212;
+  text-decoration: none;
+}
+
+.extra-container a:hover {
+  text-decoration: underline;
 }
 
 .left-extra-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  width: 60%;
+  justify-content: space-between;
 }
 
 .elem {
-  width: 220px;
+  width: 30%;
   height: auto;
-  padding: 10px 10px 10px 0;
+  padding: 10px 0 10px 0;
 }
 
 .sub-elem {
   text-align: end;
   color: #888888;
+  margin-bottom: 3px;
+}
+
+.fig-author {
+  padding-top: 3px;
 }
 
 .fig-title {
@@ -575,7 +597,9 @@ aside > h2 {
 
 .right-content {
   float: right;
-  width: 35%;
+  width: 33%;
+  border-top: 1px solid;
+  padding-top: 10px;
 }
 
 .right-extra-container {
@@ -584,18 +608,22 @@ aside > h2 {
   justify-content: flex-start;
   align-items: stretch;
   text-align: left;
+  margin-top: 10px;
  
 }
 
 .pop-elem {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 500;
   color: #121212;
   padding: 20px 10px;
   border-top: 1px solid lightgray;
+  cursor: pointer;
 }
 
-
+.pop-elem:hover {
+  color: #666666;
+}
 
 /* animated search input experiment */
 .search-box {
