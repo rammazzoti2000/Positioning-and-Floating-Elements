@@ -551,7 +551,7 @@ aside > h2 {
 .elem {
   width: 220px;
   height: auto;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
 }
 
 .sub-elem {
@@ -571,6 +571,28 @@ aside > h2 {
   font-weight: normal;
   color: #888888;
   display: block;
+}
+
+.right-content {
+  float: right;
+  width: 35%;
+}
+
+.right-extra-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  text-align: left;
+ 
+}
+
+.pop-elem {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #121212;
+  padding: 20px 10px;
+  border-top: 1px solid lightgray;
 }
 
 
