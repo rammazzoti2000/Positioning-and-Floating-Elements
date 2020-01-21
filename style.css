@@ -37,12 +37,6 @@ body {
   line-height: 1.5;
 }
 
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
 /* Make images easier to work with */
 img {
   max-width: 100%;
@@ -125,7 +119,7 @@ header {
 nav {
   padding: 7px 15px;
   background-color: white;
-  box-shadow: 0 15px 25px -26px black;
+  box-shadow: 0 15px 25px -29px black;
 }
 
 .nav-container {
@@ -133,7 +127,7 @@ nav {
   grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
   justify-items: center;
   align-content: center;
-  height: 56px;
+  height: 52px;
 }
 
 .nav-icon {
@@ -242,17 +236,10 @@ figure {
 }
 
 .social-bar-container {
+  list-style: none;
   margin-top: 10px;
   height: 50px;
   padding-top: 20px;
-}
-
-.social-bar-container li:first-child {
-  float: left;
-}
-
-.social-bar-container li:last-child {
-  float: right;
 }
 
 .time-stamp-container {
@@ -284,6 +271,18 @@ figure {
   background-color: #eee;
   color: #121212;
   border-radius: 100%;
+}
+
+.right-social-container li a {
+  color: black;
+}
+
+.social-bar-container li:first-child {
+  float: left;
+}
+
+.social-bar-container li:last-child {
+  float: right;
 }
 
 .right-social-container li:nth-child(5) {
@@ -325,7 +324,6 @@ figure {
   margin-top: 15px;
   color: #333;
   font-weight: 500;
-  font-family: nyt-imperial, "arial", sans-serif;
   letter-spacing: 0.4px;
   line-height: 25px;
 }
@@ -405,6 +403,7 @@ aside > h2 {
   margin-right: auto;
   line-height: 6px;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .empty-line {
@@ -567,7 +566,7 @@ aside > h2 {
 }
 
 .sub-elem:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .fig-author {
