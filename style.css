@@ -172,7 +172,7 @@ nav {
   margin: 80px auto 20px;
 }
 
-.h1-container {   
+.h1-container {
   width: 600px;
   margin: 0 auto;
 }
@@ -238,7 +238,7 @@ figure {
   font-weight: bold;
 }
 
-.art-title p a {  
+.art-title p a {
   color: #333
 }
 
@@ -329,7 +329,7 @@ figure {
   margin-right: 0;
   width: 100%;
   max-width: 100%;
-  font-size: 1.9rem;  
+  font-size: 1.9rem;
   margin-top: 15px;
   color: #333333;
   font-weight: 500;
@@ -349,7 +349,7 @@ figure {
 
 .container {
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
   height: 100%;
 }
 
@@ -363,7 +363,7 @@ aside {
   position: relative;
   top: 50%;
   margin: 0 auto;
-  width: 70%;  
+  width: 70%;
 }
 
 aside > h2 {
@@ -419,7 +419,7 @@ aside > h2 {
 
 .subscriptions p {
   width: 500px;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -438,16 +438,14 @@ aside > h2 {
 }
 
 .empty-line-top {
-  margin: 0px auto 18px; 
+  margin: 0px auto 18px;
 }
 
 .empty-line-bottom {
-  margin: 18px auto; 
+  margin: 18px auto;
 }
 
 .spanning {
-  grid-column: 1 / -1;
-  font-family: nyt-cheltenham,georgia,times new roman,times,serif;
   width: 940px;
   margin: 50px auto ;
   border-bottom: 1px solid lightgray;
@@ -532,6 +530,7 @@ aside > h2 {
   font-size: 1.3rem;
   height: 40px;
   margin: 0;
+  text-transform: uppercase
 }
 
 .main-extra-container {
@@ -548,8 +547,6 @@ aside > h2 {
   border-top: 1px solid;
   padding-top: 10px;
 }
-
-
 
 .extra-container a{
   color: #121212;
@@ -576,6 +573,10 @@ aside > h2 {
   text-align: end;
   color: #888888;
   margin-bottom: 3px;
+}
+
+.sub-elem:hover {
+  opacity: .8;
 }
 
 .fig-author {
@@ -610,7 +611,6 @@ aside > h2 {
   align-items: stretch;
   text-align: left;
   margin-top: 10px;
- 
 }
 
 .pop-elem {
@@ -628,19 +628,22 @@ aside > h2 {
 
 footer {
   width: 90%;
-  margin: 40px auto;  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;  
+  margin: 40px auto 20px;
 }
 
-.footer-list  {
+#footer-list{
   display: flex;
-  flex-flow: row;  
-} 
+  justify-content: space-evenly;
+  list-style: none;
+}
 
-.footer-list li {
-  justify-content: space-around;
+#footer-list li a {
+  text-decoration: none;
+  color: #666666;
+}
+
+#footer-list li a:hover {
+  text-decoration: underline;
 }
 
 /* animated search input experiment */
