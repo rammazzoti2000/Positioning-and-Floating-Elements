@@ -103,11 +103,6 @@ html {
   font-size: 1.6rem;
 }
 
-.right-social-container li:nth-child(5),
-.right-social-container li:nth-child(6) {
-  font-size: 1.7rem;
-}
-
 /* navigation bar start */
 header {
   position: sticky;
@@ -293,6 +288,11 @@ figure {
   margin: 0 5px;
   text-transform: uppercase;
   align-content: center;
+}
+
+.right-social-container li:nth-child(5),
+.right-social-container li:nth-child(6) {
+  font-size: 1.7rem;
 }
 
 .right-social-container > li:nth-child(5) {
