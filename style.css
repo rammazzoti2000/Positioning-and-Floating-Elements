@@ -111,7 +111,7 @@ html {
 
 .right-social-container li:nth-child(5),
 .right-social-container li:nth-child(6) {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 /* navigation bar start */
@@ -134,14 +134,6 @@ nav {
   justify-items: center;
   align-content: center;
   height: 56px;
-}
-
-.nav-container li {
-  border-radius: 5px;
-  display: grid;
-  margin: 0 5px;
-  text-transform: uppercase;
-  align-content: center;
 }
 
 .nav-icon {
@@ -176,7 +168,7 @@ nav {
   height: 32px;
   padding: 10px;
   margin-left: 5px;
-  outline: none
+  outline: none;
 }
 
 .button:active {
@@ -276,6 +268,14 @@ figure {
   align-items: center;
 }
 
+.nav-container li {
+  border-radius: 5px;
+  display: grid;
+  margin: 0 5px;
+  text-transform: uppercase;
+  align-content: center;
+}
+
 .right-social-container li {
   justify-content: space-evenly;
   align-items: center;
@@ -295,9 +295,6 @@ figure {
   background-color: transparent;
   margin-left: 5px;
 }
-
-
-/* article social media and time stamp end */
 
 /* main article section */
 .art-container {
@@ -327,8 +324,8 @@ figure {
   margin-top: 15px;
   color: #333;
   font-weight: 500;
-  font-family: nyt-imperial;
-  letter-spacing: .4px;
+  font-family: "nyt-imperial", sans-serif;
+  letter-spacing: 0.4px;
   line-height: 25px;
 }
 
@@ -342,7 +339,6 @@ figure {
   font-weight: 700;
   margin-top: 40px;
 }
-
 
 aside {
   position: relative;
@@ -372,13 +368,16 @@ aside > h2 {
   .editors-pics-link img {
     display: none;
   }
+
   .editors-pics-link {
-    grid-template-columns: 0fr 1fr;
+    grid-template-columns: 0 1fr;
   }
+
   aside {
     width: 65%;
     text-align: end;
   }
+
   .art-title-container {
     width: 59%;
   }
@@ -413,7 +412,7 @@ aside > h2 {
 }
 
 .empty-line-top {
-  margin: 0px auto 18px;
+  margin: 0 auto 18px;
 }
 
 .empty-line-bottom {
@@ -422,7 +421,7 @@ aside > h2 {
 
 .spanning {
   width: 940px;
-  margin: 50px auto ;
+  margin: 50px auto;
   border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
   padding-top: 32px;
@@ -430,7 +429,7 @@ aside > h2 {
 
 .spanning > h2 {
   font-size: 2rem;
-  line-height: 0px;
+  line-height: 0;
   margin: 0;
 }
 
@@ -439,6 +438,10 @@ aside > h2 {
   line-height: 17px;
   color: #666;
   margin: 14px 0 24px;
+}
+
+.item > p {
+  line-height: 1.6rem;
 }
 
 .spanning > p:last-child {
@@ -454,12 +457,8 @@ aside > h2 {
 }
 
 .item {
-  padding: 10px 9px 0px 6px;
+  padding: 10px 9px 0 6px;
   text-align: justify;
-}
-
-.item > p {
-  line-height: 1.6rem;
 }
 
 .row2 {
@@ -498,7 +497,7 @@ aside > h2 {
   width: 352px;
   height: 40px;
   margin: 0;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .main-extra-container {
@@ -516,7 +515,7 @@ aside > h2 {
   padding-top: 10px;
 }
 
-.extra-container a{
+.extra-container a {
   color: #121212;
   text-decoration: none;
 }
@@ -536,17 +535,16 @@ aside > h2 {
 }
 
 /* on hover text-decoration regroup (abstraction) */
-.space-and-cosmos:hover,
-.editors-pics-link > h3:hover,
-.extra-container a:hover,
-#footer-list li a:hover {
-  text-decoration: underline;
-}
-
-.art-title p a:hover,
 .article p > a:hover,
 .seventh-article-atag:hover {
   text-decoration: none;
+}
+
+.space-and-cosmos:hover,
+.editors-pics-link > h3:hover,
+.extra-container a:hover,
+.art-title p a:hover {
+  text-decoration: underline;
 }
 
 .left-extra-container {
@@ -572,7 +570,7 @@ aside > h2 {
 }
 
 .fig-author {
-  padding-top: 3px;
+  padding-top: 03px;
 }
 
 .fig-title {
@@ -633,6 +631,10 @@ footer {
   margin: 0 3px;
 }
 
+#footer-list li a:hover {
+  text-decoration: underline;
+}
+
 /* animated search input experimental */
 .search-box {
   height: auto;
@@ -640,17 +642,16 @@ footer {
   font-size: 1.2rem;
 }
 
-.search-box:hover > .search-input {
-  width: 200px;
-  padding: 0 6px;
-  border-bottom: 1px solid;
-}
-
-.search-box:hover > .search-button {
-  background: #567b95;
-  color : white;
-  border: 1px solid #326891;
-  cursor: pointer;
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #333;
+  transition: 0.4s;
+  line-height: 34px;
+  width: 0;
 }
 
 .search-button {
@@ -667,17 +668,17 @@ footer {
   outline: none;
 }
 
-.search-input {
-  border:none;
-  background: none;
-  outline:none;
-  float:left;
-  padding: 0;
-  color: #333;
-  transition-timing-function: ease-in-out;
-  transition: 0.4s;
-  line-height: 34px;
-  width: 0px;
+.search-box:hover > .search-button {
+  background: #567b95;
+  color: white;
+  border: 1px solid #326891;
+  cursor: pointer;
+}
+
+.search-box:hover > .search-input {
+  width: 200px;
+  padding: 0 6px;
+  border-bottom: 1px solid;
 }
 
 @media (max-width: 890px) {
