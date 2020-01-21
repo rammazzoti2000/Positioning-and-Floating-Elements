@@ -277,14 +277,6 @@ figure {
   float: right;
 }
 
-.nav-container li {
-  border-radius: 5px;
-  display: grid;
-  margin: 0 5px;
-  text-transform: uppercase;
-  align-content: center;
-}
-
 .right-social-container li {
   justify-content: space-evenly;
   align-items: center;
@@ -293,6 +285,14 @@ figure {
   background-color: #eee;
   color: #121212;
   border-radius: 100%;
+}
+
+.nav-container li {
+  border-radius: 5px;
+  display: grid;
+  margin: 0 5px;
+  text-transform: uppercase;
+  align-content: center;
 }
 
 .right-social-container li:nth-child(5) {
