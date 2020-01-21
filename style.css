@@ -85,6 +85,7 @@ select {
 html {
   font-family: "nyt-franklin", "helvetica", "arial", sans-serif;
   font-size: 65%;
+  height: 100%;
 }
 /* navigation bar start */
 header {
@@ -513,7 +514,7 @@ aside > h2 {
   margin-bottom: 20px;
 }
 
-#seventh-article-atag {
+.seventh-article-atag {
   color: #888888;
 }
 #seventh-article-atag:hover {
@@ -536,19 +537,19 @@ aside > h2 {
 .main-extra-container {
   width: 86%;
   margin: 0 auto;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
 }
 
 .extra-container {
   width: 65%;
   margin: 0 auto;
-  float: left;
   border-top: 1px solid;
   padding-top: 10px;
 }
 
-.extra-container .left-extra-container {
-  float: left;
-}
+
 
 .extra-container a{
   color: #121212;
@@ -623,6 +624,23 @@ aside > h2 {
 
 .pop-elem:hover {
   color: #666666;
+}
+
+footer {
+  width: 90%;
+  margin: 40px auto;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+.footer-list  {
+  display: flex;
+  flex-flow: row;  
+} 
+
+.footer-list li {
+  justify-content: space-around;
 }
 
 /* animated search input experiment */
