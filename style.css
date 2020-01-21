@@ -264,14 +264,6 @@ figure {
   color: black;
 }
 
-.social-bar-container li:first-child {
-  float: left;
-}
-
-.social-bar-container li:last-child {
-  float: right;
-}
-
 .right-social-container li {
   justify-content: space-evenly;
   align-items: center;
@@ -288,6 +280,14 @@ figure {
   margin: 0 5px;
   text-transform: uppercase;
   align-content: center;
+}
+
+.social-bar-container li:first-child {
+  float: left;
+}
+
+.social-bar-container li:last-child {
+  float: right;
 }
 
 .right-social-container li:nth-child(5),
@@ -535,16 +535,16 @@ aside > h2 {
 }
 
 /* on hover text-decoration regroup (abstraction) */
-.article p > a:hover,
-.seventh-article-atag:hover {
-  text-decoration: none;
-}
-
 .space-and-cosmos:hover,
 .editors-pics-link > h3:hover,
 .art-title p a:hover,
 .extra-container a:hover {
   text-decoration: underline;
+}
+
+.article p > a:hover,
+.seventh-article-atag:hover {
+  text-decoration: none;
 }
 
 .left-extra-container {
