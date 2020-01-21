@@ -542,7 +542,7 @@ aside > h2 {
 
 .space-and-cosmos:hover,
 .editors-pics-link > h3:hover,
-.art-title p a:hover
+.art-title p a:hover,
 .extra-container a:hover {
   text-decoration: underline;
 }
