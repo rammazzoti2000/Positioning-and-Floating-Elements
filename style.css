@@ -255,6 +255,28 @@ figure {
   align-items: center;
 }
 
+.editors-pics a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.extra-container a {
+  color: #121212;
+  text-decoration: none;
+}
+
+.right-social-container li a {
+  color: black;
+}
+
+.social-bar-container li:first-child {
+  float: left;
+}
+
+.social-bar-container li:last-child {
+  float: right;
+}
+
 .nav-container li {
   border-radius: 5px;
   display: grid;
@@ -271,18 +293,6 @@ figure {
   background-color: #eee;
   color: #121212;
   border-radius: 100%;
-}
-
-.right-social-container li a {
-  color: black;
-}
-
-.social-bar-container li:first-child {
-  float: left;
-}
-
-.social-bar-container li:last-child {
-  float: right;
 }
 
 .right-social-container li:nth-child(5) {
@@ -380,11 +390,6 @@ aside > h2 {
   .art-title-container {
     width: 59%;
   }
-}
-
-.editors-pics a {
-  text-decoration: none;
-  color: #121212;
 }
 
 .editors-pics-link > h3 {
@@ -515,11 +520,6 @@ aside > h2 {
   padding-top: 10px;
 }
 
-.extra-container a {
-  color: #121212;
-  text-decoration: none;
-}
-
 .art-title p a {
   color: #333;
 }
@@ -542,8 +542,8 @@ aside > h2 {
 
 .space-and-cosmos:hover,
 .editors-pics-link > h3:hover,
-.extra-container a:hover,
-.art-title p a:hover {
+.art-title p a:hover
+.extra-container a:hover {
   text-decoration: underline;
 }
 
