@@ -12,7 +12,7 @@ Remake of an article page from [The New York Times](https://www.nytimes.com/2014
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/rammazzoti2000/Positioning-and-Floating-Elements/016c197bd0021242780f2c532d2c88e8eef48ebe/index.html)
+[Live Demo Link](https://rawcdn.githack.com/rammazzoti2000/Positioning-and-Floating-Elements/88df2362691dd965d913bfdbce0e08b40ca59f5a/index.html)
 
 
 ## Authors
