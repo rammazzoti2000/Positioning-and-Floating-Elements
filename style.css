@@ -307,15 +307,6 @@ aside div h3 {
   margin: 0 auto;
 }
 
-.art-title p a {
-  color: #333;
-}
-
-.article p > a {
-  text-decoration: underline;
-  color: rgb(50, 104, 145);
-}
-
 .subscriptions p a {
   color: rgb(50, 104, 145);
   text-decoration: none;
@@ -533,6 +524,15 @@ aside > h2 {
   color: #121212;
 }
 
+.art-title p a {
+  color: #333;
+}
+
+.article p > a {
+  text-decoration: underline;
+  color: rgb(50, 104, 145);
+}
+
 .extra-container {
   border-top: 1px solid;
   padding-top: 10px;
@@ -626,6 +626,15 @@ footer {
   list-style: none;
 }
 
+.extra-container a:hover {
+  text-decoration: underline;
+}
+
+.article p > a:hover,
+.art-title p a:hover {
+  text-decoration: none;
+}
+
 #footer-list a {
   text-decoration: none;
   color: #666;
@@ -667,14 +676,7 @@ iframe {
   margin: 0 auto;
 }
 
-.art-title p a:hover,
-.article p > a:hover {
-  text-decoration: none;
-}
-
 .editors-pics-link > h3:hover,
-.art-title p a:hover,
-.extra-container a:hover,
 #footer-list li a:hover {
   text-decoration: underline;
 }
