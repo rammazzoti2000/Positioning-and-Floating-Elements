@@ -307,6 +307,11 @@ aside div h3 {
   margin: 0 auto;
 }
 
+.main-extra-container a {
+  text-decoration: none;
+  color: #121212;
+}
+
 .subscriptions p a {
   color: rgb(50, 104, 145);
   text-decoration: none;
@@ -517,11 +522,6 @@ aside > h2 {
   list-style: none;
   float: right;
   margin-top: 18px;
-}
-
-.main-extra-container a {
-  text-decoration: none;
-  color: #121212;
 }
 
 .art-title p a {
