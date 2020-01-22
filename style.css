@@ -43,9 +43,61 @@ ol[class] {
   list-style: none;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
 }
 
 /* Make images easier to work with */
@@ -87,11 +139,55 @@ html {
   font-size: 65%;
   height: 100%;
 }
+
+html, body {
+  overflow: auto;
+}
+
+/* font-size regroup (abstraction) */
+.time-stamp-container,
+.comment-button,
+.fig-title {
+     font-size: 1.3rem;
+}
+
+.nav-icon,
+.spanning > p,
+.item > p {
+    font-size: 1.4rem;
+}
+
+.space-and-cosmos,
+.big-picture-figcap,
+.art-title p,
+.subscriptions p {
+    font-size: 1.5rem;
+}
+
+.pop-elem,
+.search-input {
+    font-size: 1.6rem;
+}
+
+
+/* on hover text-decoration regroup (abstraction) */
+.space-and-cosmos:hover,
+.editors-pics-link > h3:hover,
+.extra-container a:hover,
+#footer-list li a:hover {
+    text-decoration: underline;
+}
+
+.art-title p a:hover,
+.article p > a:hover,
+.seventh-article-atag:hover {
+    text-decoration: none;
+}
+
 /* navigation bar start */
 header {
-  position: fixed;
+  position: sticky;
   background: white;
-  width: 100%;
   top: 0;
   z-index: 1;
 }
@@ -101,48 +197,58 @@ nav {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center; */
-  padding: 7px 15px;
   background-color: white;
-  box-shadow: 0 15px 25px -25px black;
+  box-shadow: 0 15px 25px -26px black;
+  height: 56px;
+  padding: 0px 15px;
+
 }
 
-.nav-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
-  justify-items: center;
-  align-content: center;
-  height: 42px;
+.logo {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
+  font-family: newyork;
+  font-size: 3rem;
+  font-weight: 500;
+}
+@font-face {
+  font-family: newyork;
+  src: url(assets/fonts/Chomsky.woff);
 }
 
-.nav-container li {
+nav li {
+  display:inline;
+  list-style:none;
   border-radius: 5px;
-  display: grid;
-  margin: 0 5px;
-  text-transform: uppercase;
-  align-content: center;
+}
+
+
+
+ul.left-list {
+  float:left;
+  padding-left: 0px;
+  margin-top: -35px;
+  font-size: 1.3rem;
+  padding-left: 5px;
+}
+
+ul.nav-button {
+  float: right;
+  margin-top: -40px;
 }
 
 .nav-icon {
   margin-right: 10px;
   cursor: pointer;
-  font-size: 1.4rem;
 }
 
 .space-and-cosmos {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.5rem;  
   font-weight: bold;
   color: black;
-}
-.space-and-cosmos:hover {
-  text-decoration: underline;
-}
-
-.main-logo {
-  width: 195px;
-  height: 26px;
-  margin: 6px auto 0;
 }
 
 .button {
@@ -153,7 +259,7 @@ nav {
   border: 1px solid #326891;
   border-radius: 3px;
   color: #fff;
-  font-size: 11px;
+  font-size: 1.1rem;
   line-height: 11px;
   font-weight: 700;
   height: 32px;
@@ -169,22 +275,23 @@ nav {
 
 /* main section start */
 .title-header {
-  margin: 80px auto 20px;
+  margin: 42px auto 20px;
 }
 
 .h1-container {
   width: 600px;
   margin: 0 auto;
+
 }
 
 .h1-container h1 {
   color: #121212;
-  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
   font-weight: 600;
   font-style: italic;
   margin: 0 20px 1rem;
   text-align: left;
-  font-size: 3.25rem; 
+  font-size: 3.25rem;
+  font-family: "georgia"; 
 }
 
 .main-img-container {
@@ -201,13 +308,10 @@ figure {
 }
 
 .big-picture-figcap {
-  color: #666;
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  color: #666666;
   margin: 10px 0 0;
   text-align: left;
-  font-size: 1.5rem;
   max-width: 90%;
-  text-align: left;
 }
 
 .inline-figcap {
@@ -232,18 +336,13 @@ figure {
 }
 
 .art-title p {
-  font-size: 1.5rem;
   line-height: 1.25rem;
   color: #333;
   font-weight: bold;
 }
 
 .art-title p a {
-  color: #333
-}
-
-.art-title p a:hover {
-  text-decoration: none;
+  color: #333333
 }
 
 .social-bar-container {
@@ -256,64 +355,36 @@ figure {
   padding-top: 20px;
 }
 
-.social-bar-container li:first-child {
+.time-stamp-container {
+  color: #333333;
+  padding-top: 10px;
   float: left;
 }
 
-.social-bar-container li:last-child {
-  float: right;
+div .right-social-container {
+  list-style: none;    
+  float: right
 }
 
-.time-stamp-container {
-  font-size: 1.3rem;
-  color: #333333;
-  padding-top: 10px;
-}
 
-.right-social-container {
-  list-style: none;
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-  align-items: center;
-}
-
-.right-social-container li {
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 20px;
-  padding: 5px 8px;
-  background-color: #EEE;
-  border-radius: 100%;
-  font-size: 1.3rem;
-}
-
-.right-social-container li:nth-child(5) {
-  padding: 5px 12px;
-  background-color: transparent;
-  font-size: 1.7rem;
-  margin-left: 10px;
-}
-
-.right-social-container li:nth-child(6) {
-  background-color: transparent;
-  font-size: 1.7rem;
-  margin-left: 5px;
-}
-.right-social-container li a{
+.right-social-container a {  
   color: black;
+  margin-left: 14px;
+  font-size: 1.5rem;
 }
+
 /* article social media and time stamp end */
 
 /* main article section */
-.art-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+.art-container {  
+  width: 100%;
   margin: 0 auto;
 }
 
 .art-container-left {
   text-align: justify;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .article {
@@ -343,10 +414,6 @@ figure {
   color: rgb(50, 104, 145);
 }
 
-.article p > a:hover {
-  text-decoration: none;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -360,10 +427,9 @@ figure {
 
 
 aside {
-  position: relative;
-  top: 50%;
-  margin: 0 auto;
-  width: 70%;
+  margin: 50% 29px;
+  width: 19%;
+  float: right;
 }
 
 aside > h2 {
@@ -371,12 +437,17 @@ aside > h2 {
   margin-bottom: 15px;
   border-bottom: 1px solid lightgray;
 }
+aside a {
+  margin-bottom: 10px;
+}
+
+aside a div {
+  width: 22%;
+  float: left;
+}
 
 .editors-pics-link {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 3fr 1fr;
-  align-items: self-end;
+  display: inline-block;
 }
 
 .editors-pics-link > img {
@@ -406,10 +477,9 @@ aside > h2 {
 
 .editors-pics-link > h3 {
   padding-left: 7px;
-}
-
-.editors-pics-link > h3:hover {
-  text-decoration: underline;
+  float: left;
+  width: 63%;
+  text-align: inherit;
 }
 
 /* Subscriptions inline area */
@@ -419,7 +489,6 @@ aside > h2 {
 
 .subscriptions p {
   width: 500px;
-  font-size: 1.5rem;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -454,15 +523,14 @@ aside > h2 {
 }
 
 .spanning > h2 {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 0px;
   margin: 0;
 }
 
 .spanning > p {
-  font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 17px;
   color: #666666;
   margin: 14px 0 24px;
 }
@@ -485,8 +553,6 @@ aside > h2 {
 }
 
 .item > p {
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-  font-size: 1.4rem;
   line-height: 1.6rem;
 }
 
@@ -515,9 +581,6 @@ aside > h2 {
 .seventh-article-atag {
   color: #888888;
 }
-#seventh-article-atag:hover {
-  text-decoration: none;
-}
 
 .comment-container {
   color: #121212;
@@ -527,23 +590,23 @@ aside > h2 {
 
 .comment-button {
   width: 352px;
-  font-size: 1.3rem;
   height: 40px;
   margin: 0;
   text-transform: uppercase
 }
 
+.comment-container .right-social-container {
+  list-style: none;
+  float: right;
+  margin-top: 18px;
+}
+
 .main-extra-container {
-  width: 86%;
+  width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-flow: row-reverse;
-  justify-content: space-between;
 }
 
 .extra-container {
-  width: 65%;
-  margin: 0 auto;
   border-top: 1px solid;
   padding-top: 10px;
 }
@@ -553,20 +616,16 @@ aside > h2 {
   text-decoration: none;
 }
 
-.extra-container a:hover {
-  text-decoration: underline;
-}
-
 .left-extra-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .elem {
-  width: 30%;
+  float: left;  
+  width: 20%;
   height: auto;
-  padding: 10px 0 10px 0;
+  margin: 10px 10px 10px 0;
 }
 
 .sub-elem {
@@ -584,7 +643,6 @@ aside > h2 {
 }
 
 .fig-title {
-  font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.6;
   width: 75%;
@@ -599,22 +657,17 @@ aside > h2 {
 
 .right-content {
   float: right;
-  width: 33%;
+  width: 25%;
   border-top: 1px solid;
   padding-top: 10px;
 }
 
 .right-extra-container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  text-align: left;
+  display: inline-block;
   margin-top: 10px;
 }
 
 .pop-elem {
-  font-size: 1.6rem;
   font-weight: 500;
   color: #121212;
   padding: 20px 10px;
@@ -628,25 +681,48 @@ aside > h2 {
 
 footer {
   width: 90%;
-  margin: 40px auto 20px;
+  margin: 0 auto 5%;
+  bottom: 0;
+  position: sticky;
+  clear: both;
+  padding-top: 10%;
 }
 
-#footer-list{
-  display: flex;
-  justify-content: space-evenly;
+#footer-list li{
+  display: inline;
   list-style: none;
 }
 
-#footer-list li a {
+#footer-list a {
+  
   text-decoration: none;
   color: #666666;
+  margin: 0 3px;
+  padding: 0 0 0 10px;
 }
 
-#footer-list li a:hover {
-  text-decoration: underline;
+.footer-curtain {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid black;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  font-size: 15px;
 }
 
-/* animated search input experiment */
+.footer-curtain div {
+  width: 97%;
+  text-align: center;
+}
+
+.expand {
+  float: right;
+}
+
+/* animated search input experimental */
 .search-box {
   height: auto;
   border-radius: 100%;
@@ -688,7 +764,6 @@ footer {
   float:left;
   padding: 0;
   color: #333333;
-  font-size: 1.6rem ;
   transition-timing-function: ease-in-out;
   transition: 0.4s;
   line-height: 34px;
@@ -702,8 +777,678 @@ footer {
 }
 
 .video-container {
-  margin: 60px;
+  margin: 20px 0;
   border-bottom: 1px solid lightgray;
-  padding: 33px 0;
+  padding: 29px 2px;
+  border-top: 1px solid lightgray;
+}
+
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Html project Start*/
+html {
+  font-family: "nyt-franklin", "helvetica", "arial", sans-serif;
+  font-size: 65%;
+  height: 100%;
+}
+
+html, body {
+  overflow: auto;
+}
+
+/* font-size regroup (abstraction) */
+.time-stamp-container,
+.comment-button,
+.fig-title {
+     font-size: 1.3rem;
+}
+
+.nav-icon,
+.spanning > p,
+.item > p {
+    font-size: 1.4rem;
+}
+
+.space-and-cosmos,
+.big-picture-figcap,
+.art-title p,
+.subscriptions p {
+    font-size: 1.5rem;
+}
+
+.pop-elem,
+.search-input {
+    font-size: 1.6rem;
+}
+
+
+/* on hover text-decoration regroup (abstraction) */
+.space-and-cosmos:hover,
+.editors-pics-link > h3:hover,
+.extra-container a:hover,
+#footer-list li a:hover {
+    text-decoration: underline;
+}
+
+.art-title p a:hover,
+.article p > a:hover,
+.seventh-article-atag:hover {
+    text-decoration: none;
+}
+
+/* navigation bar start */
+header {
+  position: sticky;
+  background: white;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  /* display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; */
+  background-color: white;
+  box-shadow: 0 15px 25px -26px black;
+  height: 56px;
+  padding: 0px 15px;
+
+}
+
+.logo {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
+  font-family: newyork;
+  font-size: 3rem;
+  font-weight: 500;
+}
+@font-face {
+  font-family: newyork;
+  src: url(assets/fonts/Chomsky.woff);
+}
+
+nav li {
+  display:inline;
+  list-style:none;
+  border-radius: 5px;
+}
+
+
+
+ul.left-list {
+  float:left;
+  padding-left: 0px;
+  margin-top: -35px;
+  font-size: 1.3rem;
+  padding-left: 5px;
+}
+
+ul.nav-button {
+  float: right;
+  margin-top: -40px;
+}
+
+.nav-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.space-and-cosmos {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.button {
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 11px;
+  font-weight: 700;
+  height: 32px;
+  padding: 10px;
+  margin-left: 5px;
+  outline: none
+}
+
+.button:active {
+  background-color: #195f94;
+}
+/* navigation bar end */
+
+/* main section start */
+.title-header {
+  margin: 42px auto 20px;
+}
+
+.h1-container {
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.h1-container h1 {
+  color: #121212;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 20px 1rem;
+  text-align: left;
+  font-size: 3.25rem;
+  font-family: "georgia"; 
+}
+
+.main-img-container {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+figure {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big-picture-figcap {
+  color: #666666;
+  margin: 10px 0 0;
+  text-align: left;
+  max-width: 90%;
+}
+
+.inline-figcap {
+  font-size: 1.2rem;
+  color: #888888;
+}
+
+/* main section ends */
+
+/* article social media and time stamp start */
+.art-title-container {
+  color: #121212;
+  margin-bottom: 1.5625rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.art-title {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.art-title p {
+  line-height: 1.25rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.art-title p a {
+  color: #333333
+}
+
+.social-bar-container {
+/* display: flex; 
+  flex-flow: row; 
+  justify-content: space-between;
+  align-items: center; */
+  margin-top: 10px;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.time-stamp-container {
+  color: #333333;
+  padding-top: 10px;
+  float: left;
+}
+
+div .right-social-container {
+  list-style: none;    
+  float: right
+}
+
+
+.right-social-container a {  
+  color: black;
+  margin-left: 14px;
+  font-size: 1.5rem;
+}
+
+/* article social media and time stamp end */
+
+/* main article section */
+.art-container {  
+  width: 100%;
+  margin: 0 auto;
+}
+
+.art-container-left {
+  text-align: justify;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.article {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-article:first-child {
+  margin-top: 0;
+}
+
+.article p {
+  margin-right: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.9rem;
+  margin-top: 15px;
+  color: #333333;
+  font-weight: 500;
+  font-family: nyt-imperial;
+  letter-spacing: .4px;
+  line-height: 25px;
+}
+
+.article p > a {
+  text-decoration: underline;
+  color: rgb(50, 104, 145);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.strong {
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+
+aside {
+  margin: 50% 29px;
+  width: 19%;
+  float: right;
+}
+
+aside > h2 {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+aside a {
+  margin-bottom: 10px;
+}
+
+aside a div {
+  width: 22%;
+  float: left;
+}
+
+.editors-pics-link {
+  display: inline-block;
+}
+
+.editors-pics-link > img {
+  height: 70px;
+}
+
+@media (max-width: 900px) {
+  .editors-pics-link img {
+    display: none;
+  }
+  .editors-pics-link {
+    grid-template-columns: 0fr 1fr;
+  }
+  aside {
+    width: 65%;
+    text-align: end;
+  }
+  .art-title-container {
+    width: 59%;
+  }
+}
+
+.editors-pics a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.editors-pics-link > h3 {
+  padding-left: 7px;
+  float: left;
+  width: 63%;
+  text-align: inherit;
+}
+
+/* Subscriptions inline area */
+.subscriptions {
+  margin: 20px auto;
+}
+
+.subscriptions p {
+  width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 6px;
+  font-weight: bold;
+}
+
+.subscriptions p a {
+  color: rgb(50, 104, 145);
+  text-decoration: none;
+}
+
+.empty-line {
+  width: 72px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.empty-line-top {
+  margin: 0px auto 18px;
+}
+
+.empty-line-bottom {
+  margin: 18px auto;
+}
+
+.spanning {
+  width: 940px;
+  margin: 50px auto ;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  padding-top: 32px;
+}
+
+.spanning > h2 {
+  font-size: 2rem;
+  line-height: 0px;
+  margin: 0;
+}
+
+.spanning > p {
+  font-weight: 400;
+  line-height: 17px;
+  color: #666666;
+  margin: 14px 0 24px;
+}
+
+.spanning > p:last-child {
+  margin: 32px 0 12px;
+}
+
+#grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 135px 150px 135px 150px;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: contain;
+}
+
+.item {
+  padding: 10px 9px 0px 6px;
+  text-align: justify;
+}
+
+.item > p {
+  line-height: 1.6rem;
+}
+
+.row2 {
+  grid-row: 2;
+}
+
+.row4 {
+  grid-row: 4;
+}
+
+.inline-fig-container {
+  margin-top: 20px;
+}
+
+#figcap {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+.seventh-article {
+  margin-bottom: 20px;
+}
+
+.seventh-article-atag {
+  color: #888888;
+}
+
+.comment-container {
+  color: #121212;
+  margin: 1.5625rem;
+  margin: 26px auto;
+}
+
+.comment-button {
+  width: 352px;
+  height: 40px;
+  margin: 0;
+  text-transform: uppercase
+}
+
+.comment-container .right-social-container {
+  list-style: none;
+  float: right;
+  margin-top: 18px;
+}
+
+.main-extra-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.extra-container {
+  border-top: 1px solid;
+  padding-top: 10px;
+}
+
+.extra-container a{
+  color: #121212;
+  text-decoration: none;
+}
+
+.left-extra-container {
+  margin: 0;
+  padding: 0;
+}
+
+.elem {
+  float: left;  
+  width: 20%;
+  height: auto;
+  margin: 10px 10px 10px 0;
+}
+
+.sub-elem {
+  text-align: end;
+  color: #888888;
+  margin-bottom: 3px;
+}
+
+.sub-elem:hover {
+  opacity: .8;
+}
+
+.fig-author {
+  padding-top: 3px;
+}
+
+.fig-title {
+  font-weight: 700;
+  line-height: 1.6;
+  width: 75%;
+}
+
+.fig-title > time {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #888888;
+  display: block;
+}
+
+.right-content {
+  float: right;
+  width: 25%;
+  border-top: 1px solid;
+  padding-top: 10px;
+}
+
+.right-extra-container {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.pop-elem {
+  font-weight: 500;
+  color: #121212;
+  padding: 20px 10px;
+  border-top: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.pop-elem:hover {
+  color: #666666;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto 5%;
+  bottom: 0;
+  position: sticky;
+  clear: both;
+  padding-top: 10%;
+}
+
+#footer-list li{
+  display: inline;
+  list-style: none;
+}
+
+#footer-list a {
+  
+  text-decoration: none;
+  color: #666666;
+  margin: 0 3px;
+  padding: 0 0 0 10px;
+}
+
+.footer-curtain {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid black;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  font-size: 15px;
+}
+
+.footer-curtain div {
+  width: 97%;
+  text-align: center;
+}
+
+.expand {
+  float: right;
+}
+
+/* animated search input experimental */
+.search-box {
+  height: auto;
+  border-radius: 100%;
+  font-size: 1.2rem;
+}
+
+.search-box:hover > .search-input {
+  width: 200px;
+  padding: 0 6px;
+  border-bottom: 1px solid;
+}
+
+.search-box:hover > .search-button {
+  background: #567b95;
+  color : white;
+  border: 1px solid #326891;
+  cursor: pointer;
+
+}
+
+.search-button {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  background-color: white;
+  border: 1px solid;
+  outline: none;
+}
+
+.search-input {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: #333333;
+  transition-timing-function: ease-in-out;
+  transition: 0.4s;
+  line-height: 34px;
+  width: 0px;
+}
+
+@media (max-width: 890px) {
+  .search-box:hover > .search-input {
+    width: 100px;
+  }
+}
+
+.video-container {
+  margin: 20px 0;
+  border-bottom: 1px solid lightgray;
+  padding: 29px 2px;
   border-top: 1px solid lightgray;
 }
