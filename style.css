@@ -108,7 +108,7 @@ html, body {
 
 .pop-elem,
 .search-input {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 
@@ -117,13 +117,13 @@ html, body {
 .editors-pics-link > h3:hover,
 .extra-container a:hover,
 #footer-list li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .art-title p a:hover,
 .article p > a:hover,
 .seventh-article-atag:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* navigation bar start */
@@ -144,7 +144,6 @@ nav {
   box-shadow: 0 15px 25px -26px black;
   height: 56px;
   padding: 0px 15px;
-
 }
 
 .logo {
@@ -162,8 +161,6 @@ nav li {
   list-style:none;
   border-radius: 5px;
 }
-
-
 
 ul.left-list {
   float:left;
@@ -219,7 +216,6 @@ ul.nav-button {
 .h1-container {
   width: 600px;
   margin: 0 auto;
-
 }
 
 .h1-container > h1 {
@@ -229,7 +225,7 @@ ul.nav-button {
   margin: 0 20px 1rem;
   text-align: left;
   font-size: 3.25rem;
-  font-family: "georgia"; 
+  font-family: "georgia", sans-serif;
 }
 
 .main-img-container {
@@ -256,8 +252,6 @@ figure {
   font-size: 1.2rem;
   color: #888;
 }
-
-/* main section ends */
 
 /* article social media and time stamp start */
 .art-title-container {
@@ -293,21 +287,19 @@ figure {
 }
 
 div .right-social-container {
-  list-style: none;    
+  list-style: none;
   float: right
 }
 
 
-.right-social-container a {  
+.right-social-container > a {
   color: black;
   margin-left: 14px;
   font-size: 1.5rem;
 }
 
-/* article social media and time stamp end */
-
 /* main article section */
-.art-container {  
+.art-container {
   width: 100%;
   margin: 0 auto;
 }
@@ -572,7 +564,7 @@ aside div h3 {
 }
 
 .elem {
-  float: left;  
+  float: left;
   width: 20%;
   height: auto;
   margin: 10px 10px 10px 0;
@@ -680,7 +672,6 @@ footer {
   border-bottom: 1px solid lightgray;
   padding: 29px 2px;
   border-top: 1px solid lightgray;
-  
 }
 
 iframe {
