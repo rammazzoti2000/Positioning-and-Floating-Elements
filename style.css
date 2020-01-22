@@ -313,14 +313,15 @@ div .right-social-container {
 /* article social media and time stamp end */
 
 /* main article section */
-.art-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+.art-container {  
+  width: 100%;
   margin: 0 auto;
 }
 
 .art-container-left {
   text-align: justify;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .article {
@@ -363,10 +364,9 @@ div .right-social-container {
 
 
 aside {
-  position: relative;
-  top: 50%;
-  margin: 0 auto;
-  width: 70%;
+  margin: 50% auto;
+  width: 23%;
+  float: right;
 }
 
 aside > h2 {
@@ -522,6 +522,12 @@ aside > h2 {
   height: 40px;
   margin: 0;
   text-transform: uppercase
+}
+
+.comment-container .right-social-container {
+  list-style: none;
+  float: right;
+  margin-top: 18px;
 }
 
 .main-extra-container {
@@ -683,8 +689,8 @@ footer {
 }
 
 .video-container {
-  margin: 60px;
+  margin: 20px 0;
   border-bottom: 1px solid lightgray;
-  padding: 33px 0;
+  padding: 29px 2px;
   border-top: 1px solid lightgray;
 }
