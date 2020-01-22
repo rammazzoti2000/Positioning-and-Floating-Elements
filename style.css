@@ -82,7 +82,8 @@ html {
   src: url(assets/fonts/Chomsky.woff);
 }
 
-html, body {
+html,
+body {
   overflow: auto;
 }
 
@@ -111,21 +112,6 @@ html, body {
   font-size: 1.6rem;
 }
 
-
-/* on hover text-decoration regroup (abstraction) */
-.space-and-cosmos:hover,
-.editors-pics-link > h3:hover,
-.extra-container a:hover,
-#footer-list li a:hover {
-  text-decoration: underline;
-}
-
-.art-title p a:hover,
-.article p > a:hover,
-.seventh-article-atag:hover {
-  text-decoration: none;
-}
-
 /* navigation bar start */
 header {
   position: fixed;
@@ -143,7 +129,7 @@ nav {
   background-color: white;
   box-shadow: 0 15px 25px -26px black;
   height: 56px;
-  padding: 0px 15px;
+  padding: 0 15px;
 }
 
 .logo {
@@ -151,20 +137,19 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 4px;
-  font-family: newyork;
+  font-family: newyork, sans-serif;
   font-size: 3rem;
   font-weight: 500;
 }
 
 nav li {
-  display:inline;
-  list-style:none;
+  display: inline;
+  list-style: none;
   border-radius: 5px;
 }
 
 ul.left-list {
-  float:left;
-  padding-left: 0px;
+  float: left;
   margin-top: -35px;
   font-size: 1.3rem;
   padding-left: 5px;
@@ -185,6 +170,10 @@ ul.nav-button {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+}
+
+.space-and-cosmos:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -288,14 +277,48 @@ figure {
 
 div .right-social-container {
   list-style: none;
-  float: right
+  float: right;
 }
 
+aside a {
+  margin-bottom: 10px;
+}
 
 .right-social-container > a {
   color: black;
   margin-left: 14px;
   font-size: 1.5rem;
+}
+
+aside div h3 {
+  text-decoration: none;
+  color: #121212;
+}
+
+.editors-pics-link > h3 {
+  padding-left: 7px;
+  float: left;
+  width: 63%;
+  text-align: inherit;
+}
+
+.main-extra-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.art-title p a {
+  color: #333;
+}
+
+.article p > a {
+  text-decoration: underline;
+  color: rgb(50, 104, 145);
+}
+
+.subscriptions p a {
+  color: rgb(50, 104, 145);
+  text-decoration: none;
 }
 
 /* main article section */
@@ -342,15 +365,12 @@ div .right-social-container {
   margin-top: 40px;
 }
 
- article > aside {
+article > aside {
   margin: 50% 36px;
   width: 16%;
   float: right;
 }
 
-aside a {
-  margin-bottom: 10px;
-}
 aside a div {
   width: 22%;
   float: left;
@@ -387,18 +407,6 @@ aside > h2 {
   .art-title-container {
     width: 59%;
   }
-}
-
-aside div h3 {
-  text-decoration: none;
-  color: #121212;
-}
-
-.editors-pics-link > h3 {
-  padding-left: 7px;
-  float: left;
-  width: 63%;
-  text-align: inherit;
 }
 
 /* Subscriptions inline area */
@@ -497,6 +505,10 @@ aside div h3 {
   color: #888;
 }
 
+.seventh-article-atag:hover {
+  text-decoration: none;
+}
+
 .comment-container {
   color: #121212;
   margin: 1.5625rem;
@@ -516,11 +528,6 @@ aside div h3 {
   margin-top: 18px;
 }
 
-.main-extra-container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .main-extra-container a {
   text-decoration: none;
   color: #121212;
@@ -531,25 +538,9 @@ aside div h3 {
   padding-top: 10px;
 }
 
-.art-title p a {
-  color: #333;
-}
-
-.article p > a {
-  text-decoration: underline;
-  color: rgb(50, 104, 145);
-}
-
-.subscriptions p a {
-  color: rgb(50, 104, 145);
-  text-decoration: none;
-}
-
 /* on hover text-decoration regroup (abstraction) */
 .space-and-cosmos:hover,
-.editors-pics-link > h3:hover,
-.extra-container a:hover,
-.art-title p a:hover {
+.editors-pics-link > h3:hover {
   text-decoration: underline;
 }
 
@@ -642,10 +633,6 @@ footer {
   padding: 0 0 0 10px;
 }
 
-#footer-list li a:hover {
-  text-decoration: underline;
-}
-
 .footer-curtain {
   position: fixed;
   bottom: 0;
@@ -680,3 +667,14 @@ iframe {
   margin: 0 auto;
 }
 
+.art-title p a:hover,
+.article p > a:hover {
+  text-decoration: none;
+}
+
+.editors-pics-link > h3:hover,
+.art-title p a:hover,
+.extra-container a:hover,
+#footer-list li a:hover {
+  text-decoration: underline;
+}
