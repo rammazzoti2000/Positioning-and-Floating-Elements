@@ -11,28 +11,17 @@
   <body>
     <header>
       <nav>
+        <h2 class="logo">The New York Times</h2>
         <!-- leftmost elements in navbar -->
-        <ul class="nav-container">
-
-        <!-- font awesome icons -->
-          <li><i class="nav-icon fas fa-bars"></i></li>
-
-          <!-- animated input search icon/input -->
-          <li>
-            <div class="search-box">
-              <input class="search-input" type="text" name="input" placeholder="Search">
-              <button class="search-button">
-                <i class="fas fa-search"></i></button>
-            </div>
-          </li> <!-- end input -->
-
+        <ul class="left-list">
+          <li><a href="#" class="nav-icon fas fa-bars"></a></li>
+    
+          <li><a href="#" class="fas fa-search"></a></li> 
           <li><a href="https://www.nytimes.com/section/science/space" class="space-and-cosmos" target="_blank">Space &amp; Cosmos</a></li>
-          
-            <!-- middle logo -->
-            <li><a href="https://www.nytimes.com/" class="main-logo" target="_blank"><img src="assets/new_yourk_logo.svg" alt="new_your_logo"></a></li>
-        
-           <!-- rightmost icons in navbar -->
-           <li><button type="button" name="subscribe" class="button subscribe-button">SUBSCRIBE NOW</button></li>
+        </ul>
+        <!-- rightmost icons in navbar -->
+        <ul class="nav-button">
+          <li><button type="button" name="subscribe" class="button subscribe-button">SUBSCRIBE NOW</button></li>
           <li><button type="button" name="login" class="button login-button">LOGIN NOW</button></li>
         </ul>
       </nav>
@@ -59,43 +48,69 @@
         <div class="art-title">
           <p>By <a href="https://www.nytimes.com/by/dennis-overbye" target="_blank">Dennis Overbye</a></p>
         </div>          
-        <ul class="social-bar-container">
-          <li>
+        <div class="social-bar-container">
+          
             <div class="time-stamp-container">
               <time class="cs" datetime="2014-03-17T10:46:03-04:00">March 17, 2014</time>
             </div>
-          </li>
-          <li>
-            <ul class="right-social-container">
-              <li>
+            <div class="right-social-container"> 
+           
                 <a href="https://www.facebook.com/dialog/feed?app_id=9869919170&link=https%3A%2F%2Fwww.nytimes.com%2F2014%2F03%2F18%2Fscience%2Fspace%2Fdetection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html&smid=fb-share&name=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F" class="btn btn-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
+              
+              
                 <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fnyti.ms%2F1ivEk8k&text=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun" target="_blank"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
+              
+              
                 <a href="mailto:?subject=NYTimes.com%3A%20Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&body=From%20The%20New%20York%20Times%3A%0A%0ASpace%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun%0A%0AAstronomers%20looking%20back%2013.8%20billion%20years%20found%20ripples%20in%20the%20fabric%20of%20space-time%20that%20support%20the%20theory%20of%20a%20universe%20being%20wrenched%20violently%20apart%20around%20its%20inception.%0A%0Ahttps%3A%2F%2Fwww.nytimes.com%2F2014%2F03%2F18%2Fscience%2Fspace%2Fdetection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html"><i class="fas fa-envelope"></i></a>
-              </li>
-              <li>
+              
+              
                 <a href="#">
                   <i class="fas fa-share"></i></a>
-              </li>
-              <li>
+              
+              
                 <a href=" #"><i class="far fa-bookmark"></i></a>
-              </li>
-              <li>
+              
+             
                 <a href="#">
                   <i class="far fa-comment-alt"></i>
                 </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+              </div>    
+            
+          
+        </div>
       </div>
     </main>
 
     <article class="art-container">
-      <div></div>
+      <aside>
+        <h2>Editors’ Picks</h2>
+        <div class="editors-pics">
+          <article>
+            <a class="editors-pics-link" href="https://www.nytimes.com/2020/01/14/magazine/sex-scene-intimacy-coordinator.html?algo=bandit-story-geo&fellback=false&imp_id=195693198&imp_id=745095150&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending" target="_blank">
+              <div>
+                <img src="https://static01.nyt.com/images/2020/01/19/magazine/19-mag-Intimacy/19-mag-Intimacy-square640-v4.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="The Sex Scene Evolves for the #MeToo Era">
+              </div>
+              <h3>The Sex Scene Evolves for the #MeToo Era</h3>
+            </a>
+          </article>
+          <article>
+            <a class="editors-pics-link" href="https://www.nytimes.com/2020/01/18/sports/houston-astros-cheating.html?algo=bandit-story-geo&fellback=false&imp_id=645549512&imp_id=341095426" target="_blank">
+              <div>
+                <img src="https://static01.nyt.com/images/2020/01/18/sports/18mlb-astros-1/18mlb-astros-1-square640.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="The Rise and Sudden Fall of the Houston Astros">
+              </div>
+              <h3>The Rise and Sudden Fall of the Houston Astros</h3>
+            </a>
+          </article>
+          <article>
+            <a class="editors-pics-link" href="https://www.nytimes.com/2020/01/17/travel/unpack-vacation.html?algo=bandit-story-geo&fellback=false&imp_id=458580516&imp_id=697187930" target="_blank">
+              <div>
+                <img src="https://static01.nyt.com/images/2020/01/05/travel/05UNPACKING/05UNPACKING-square640.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="The Traveler’s Conundrum: Unpack or Not Unpack?">
+              </div>
+              <h3>The Traveler’s Conundrum: Unpack or Not Unpack?</h3>
+            </a>
+          </article>
+        </div>
+      </aside>      
       <div class="art-container-left">
         <div class="first-article-container container">
           <div class="first-article article">
@@ -132,38 +147,9 @@
             <p>The ripples manifested themselves as faint spiral patterns in a bath of microwave radiation that permeates space and preserves a picture of the universe when it was 380,000 years old and as hot as the surface of the sun.</p>
             <p>Dr. Kovac and his collaborators, working in an experiment known as Bicep, for Background Imaging of Cosmic Extragalactic Polarization, reported their results in a scientific briefing at the Center for Astrophysics here on Monday and in a set of papers submitted to The Astrophysical Journal.</p>
           </div>
-        </div>
-      </div>
+        </div>       
+      </div>     
      
-      <aside>
-        <h2>Editors’ Picks</h2>
-        <div class="editors-pics">
-          <article>
-            <a class="editors-pics-link" href="https://www.nytimes.com/2020/01/14/magazine/sex-scene-intimacy-coordinator.html?algo=bandit-story-geo&fellback=false&imp_id=195693198&imp_id=745095150&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending" target="_blank">
-              <div>
-                <img src="https://static01.nyt.com/images/2020/01/19/magazine/19-mag-Intimacy/19-mag-Intimacy-square640-v4.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="The Sex Scene Evolves for the #MeToo Era">
-              </div>
-              <h3>The Sex Scene Evolves for the #MeToo Era</h3>
-            </a>
-          </article>
-          <article>
-            <a class="editors-pics-link" href="https://www.nytimes.com/2020/01/18/sports/houston-astros-cheating.html?algo=bandit-story-geo&fellback=false&imp_id=645549512&imp_id=341095426" target="_blank">
-              <div>
-                <img src="https://static01.nyt.com/images/2020/01/18/sports/18mlb-astros-1/18mlb-astros-1-square640.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="The Rise and Sudden Fall of the Houston Astros">
-              </div>
-              <h3>The Rise and Sudden Fall of the Houston Astros</h3>
-            </a>
-          </article>
-          <article>
-            <a class="editors-pics-link" href="https://www.nytimes.com/2020/01/17/travel/unpack-vacation.html?algo=bandit-story-geo&fellback=false&imp_id=458580516&imp_id=697187930" target="_blank">
-              <div>
-                <img src="https://static01.nyt.com/images/2020/01/05/travel/05UNPACKING/05UNPACKING-square640.jpg?quality=75&auto=webp&disable=upscale&width=350" alt="The Traveler’s Conundrum: Unpack or Not Unpack?">
-              </div>
-              <h3>The Traveler’s Conundrum: Unpack or Not Unpack?</h3>
-            </a>
-          </article>
-        </div>
-      </aside>
     </article> 
 
     <div class="spanning">
@@ -299,28 +285,31 @@
           </div>
           <span class="inline-figcap">A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun. <a class="seventh-article-atag" href="http://www.nytreprints.com/" target="_blank">Order Reprints</a> | <a class="seventh-article-atag" href="https://www.nytimes.com/section/todayspaper">Today’s Paper</a> | <a class="seventh-article-atag" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8HYKU.html?campaignId=48JQY"> Subscribe</a></span>
         </div>
-        <div class="comment-container">
-          <ul class="social-bar-container">
-            <li>
+        <div class="comment-container">          
               <button type="button" class="comment-button button">Read 615 Comments</button>
-            </li>
-            <li>
-              <ul class="right-social-container">
-                <li>
-                  <a href="https://www.facebook.com/dialog/feed?app_id=9869919170&link=https%3A%2F%2Fwww.nytimes.com%2F2014%2F03%2F18%2Fscience%2Fspace%2Fdetection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html&smid=fb-share&name=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F" class="btn btn-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fnyti.ms%2F1ivEk8k&text=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun" target="_blank"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:?subject=NYTimes.com%3A%20Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&body=From%20The%20New%20York%20Times%3A%0A%0ASpace%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun%0A%0AAstronomers%20looking%20back%2013.8%20billion%20years%20found%20ripples%20in%20the%20fabric%20of%20space-time%20that%20support%20the%20theory%20of%20a%20universe%20being%20wrenched%20violently%20apart%20around%20its%20inception.%0A%0Ahttps%3A%2F%2Fwww.nytimes.com%2F2014%2F03%2F18%2Fscience%2Fspace%2Fdetection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-share"></i></a>
-                </li>
-              </ul>
-            </li> 
+            
+            <div class="right-social-container"> 
+           
+              <a href="https://www.facebook.com/dialog/feed?app_id=9869919170&link=https%3A%2F%2Fwww.nytimes.com%2F2014%2F03%2F18%2Fscience%2Fspace%2Fdetection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html&smid=fb-share&name=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F" class="btn btn-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+            
+            
+              <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fnyti.ms%2F1ivEk8k&text=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            
+              <a href="mailto:?subject=NYTimes.com%3A%20Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&body=From%20The%20New%20York%20Times%3A%0A%0ASpace%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun%0A%0AAstronomers%20looking%20back%2013.8%20billion%20years%20found%20ripples%20in%20the%20fabric%20of%20space-time%20that%20support%20the%20theory%20of%20a%20universe%20being%20wrenched%20violently%20apart%20around%20its%20inception.%0A%0Ahttps%3A%2F%2Fwww.nytimes.com%2F2014%2F03%2F18%2Fscience%2Fspace%2Fdetection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html"><i class="fas fa-envelope"></i></a>
+            
+            
+              <a href="#">
+                <i class="fas fa-share"></i></a>
+            
+            
+              <a href=" #"><i class="far fa-bookmark"></i></a>
+            
+           
+              <a href="#">
+                <i class="far fa-comment-alt"></i>
+              </a>
+            </div>    
           </ul>
         </div>
       </div>
@@ -364,7 +353,7 @@
       </div>  
 
       <div class="extra-container"> 
-        <a href="https://www.nytimes.com/section/science/space?action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Space%20and%20Astronomy" target="_blank"><h2>More in Space and Astronomy</h2></a>
+       <a href="https://www.nytimes.com/section/science/space?action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Space%20and%20Astronomy" target="_blank"><h2>More in Space and Astronomy</h2></a>
         <div class="left-extra-container">
           <div class="elem-1 elem">
             <figure class="sub-elem-1 sub-elem">
@@ -372,7 +361,7 @@
               <figcaption class="fig-author">Joe Rimkus Jr/Reuters</figcaption>
             </figure>
             <div class="fig-title">
-              <a href="https://www.nytimes.com/2020/01/19/science/spacex-launch.html?action=click&module=MoreIn&pgtype=Article&region=Footer&action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Space%20and%20Astronomy">SpaceX’s Explosive Test May Launch Year of Renewed Human Spaceflig</a><time datetime="01-19"> Jan. 19</time>
+              <a href="https://www.nytimes.com/2020/01/19/science/spacex-launch.html?action=click&module=MoreIn&pgtype=Article&region=Footer&action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Space%20and%20Astronomy">SpaceX’s Explosive</a><time datetime="01-19"> Jan. 19</time>
             </div>
           </div>
           <div class="elem-2 elem">
@@ -381,7 +370,7 @@
               <figcaption class="fig-author">via Carnegie Institution of Washingtom</figcaption>
             </figure>
             <div class="fig-title">
-              <a href="https://www.nytimes.com/2020/01/11/science/vera-rubin-telescope-astronomy.html?action=click&module=MoreIn&pgtype=Article&region=Footer&action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Space%20and%20Astronomy" target="_blank">Vera Rubin Gets a Telescope of Her Own</a><time datetime="01-11"> Jan. 11</time>
+              <a href="https://www.nytimes.com/2020/01/11/science/vera-rubin-telescope-astronomy.html?action=click&module=MoreIn&pgtype=Article&region=Footer&action=click&module=MoreInSection&pgtype=Article&region=Footer&contentCollection=Space%20and%20Astronomy" target="_blank">Vera Rubin Gets a Telescope</a><time datetime="01-11"> Jan. 11</time>
             </div>
           </div>
           <div class="elem-3 elem">

@@ -77,9 +77,12 @@ html {
   height: 100%;
 }
 
+html, body {
+  overflow: auto;
+}
+
 /* font-size regroup (abstraction) */
 .time-stamp-container,
-.right-social-container li,
 .comment-button,
 .fig-title {
   font-size: 1.3rem;
@@ -100,7 +103,26 @@ html {
 
 .pop-elem,
 .search-input {
+<<<<<<< HEAD
   font-size: 1.6rem;
+=======
+    font-size: 1.6rem;
+}
+
+
+/* on hover text-decoration regroup (abstraction) */
+.space-and-cosmos:hover,
+.editors-pics-link > h3:hover,
+.extra-container a:hover,
+#footer-list li a:hover {
+    text-decoration: underline;
+}
+
+.art-title p a:hover,
+.article p > a:hover,
+.seventh-article-atag:hover {
+    text-decoration: none;
+>>>>>>> 84ce051eb0f096402c378713a260ce1313885069
 }
 
 /* navigation bar start */
@@ -112,6 +134,7 @@ header {
 }
 
 nav {
+<<<<<<< HEAD
   padding: 7px 15px;
   background-color: white;
   box-shadow: 0 15px 25px -29px black;
@@ -123,6 +146,52 @@ nav {
   justify-items: center;
   align-content: center;
   height: 52px;
+=======
+  /* display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; */
+  background-color: white;
+  box-shadow: 0 15px 25px -26px black;
+  height: 56px;
+  padding: 0px 15px;
+
+}
+
+.logo {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
+  font-family: newyork;
+  font-size: 3rem;
+  font-weight: 500;
+}
+@font-face {
+  font-family: newyork;
+  src: url(assets/fonts/Chomsky.woff);
+}
+
+nav li {
+  display:inline;
+  list-style:none;
+  border-radius: 5px;
+}
+
+
+
+ul.left-list {
+  float:left;
+  padding-left: 0px;
+  margin-top: -35px;
+  font-size: 1.3rem;
+  padding-left: 5px;
+}
+
+ul.nav-button {
+  float: right;
+  margin-top: -40px;
+>>>>>>> 84ce051eb0f096402c378713a260ce1313885069
 }
 
 .nav-icon {
@@ -135,12 +204,6 @@ nav {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
-}
-
-.main-logo {
-  width: 195px;
-  height: 26px;
-  margin: 6px auto 0;
 }
 
 .button {
@@ -172,6 +235,7 @@ nav {
 .h1-container {
   width: 600px;
   margin: 0 auto;
+
 }
 
 .h1-container > h1 {
@@ -181,6 +245,10 @@ nav {
   margin: 0 20px 1rem;
   text-align: left;
   font-size: 3.25rem;
+<<<<<<< HEAD
+=======
+  font-family: "georgia"; 
+>>>>>>> 84ce051eb0f096402c378713a260ce1313885069
 }
 
 .main-img-container {
@@ -240,8 +308,10 @@ figure {
 .time-stamp-container {
   color: #333;
   padding-top: 10px;
+  float: left;
 }
 
+<<<<<<< HEAD
 .right-social-container {
   list-style: none;
   display: flex;
@@ -305,16 +375,32 @@ figure {
   background-color: transparent;
   margin-left: 5px;
 }
+=======
+div .right-social-container {
+  list-style: none;    
+  float: right
+}
+
+
+.right-social-container a {  
+  color: black;
+  margin-left: 14px;
+  font-size: 1.5rem;
+}
+
+/* article social media and time stamp end */
+>>>>>>> 84ce051eb0f096402c378713a260ce1313885069
 
 /* main article section */
-.art-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+.art-container {  
+  width: 100%;
   margin: 0 auto;
 }
 
 .art-container-left {
   text-align: justify;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .article {
@@ -350,10 +436,9 @@ figure {
 }
 
 aside {
-  position: relative;
-  top: 50%;
-  margin: 0 auto;
-  width: 70%;
+  margin: 50% auto;
+  width: 23%;
+  float: right;
 }
 
 aside > h2 {
@@ -505,17 +590,18 @@ aside > h2 {
   text-transform: uppercase;
 }
 
+.comment-container .right-social-container {
+  list-style: none;
+  float: right;
+  margin-top: 18px;
+}
+
 .main-extra-container {
-  width: 86%;
+  width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-flow: row-reverse;
-  justify-content: space-between;
 }
 
 .extra-container {
-  width: 65%;
-  margin: 0 auto;
   border-top: 1px solid;
   padding-top: 10px;
 }
@@ -548,15 +634,15 @@ aside > h2 {
 }
 
 .left-extra-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .elem {
-  width: 30%;
+  float: left;  
+  width: 20%;
   height: auto;
-  padding: 10px 0 10px 0;
+  margin: 10px 10px 10px 0;
 }
 
 .sub-elem {
@@ -588,17 +674,13 @@ aside > h2 {
 
 .right-content {
   float: right;
-  width: 33%;
+  width: 25%;
   border-top: 1px solid;
   padding-top: 10px;
 }
 
 .right-extra-container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  text-align: left;
+  display: inline-block;
   margin-top: 10px;
 }
 
@@ -617,6 +699,9 @@ aside > h2 {
 footer {
   width: 90%;
   margin: 40px auto 20px;
+  bottom: 0;
+  position: sticky;
+  clear: both;
 }
 
 #footer-list {
@@ -688,8 +773,8 @@ footer {
 }
 
 .video-container {
-  margin: 60px;
+  margin: 20px 0;
   border-bottom: 1px solid lightgray;
-  padding: 33px 0;
+  padding: 29px 2px;
   border-top: 1px solid lightgray;
 }
