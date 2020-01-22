@@ -10,28 +10,17 @@
   <body>
     <header>
       <nav>
+        <h2 class="logo">The New York Times</h2>
         <!-- leftmost elements in navbar -->
-        <ul class="nav-container">
-
-        <!-- font awesome icons -->
-          <li><i class="nav-icon fas fa-bars"></i></li>
-
-          <!-- animated input search icon/input -->
-          <li>
-            <div class="search-box">
-              <input class="search-input" type="text" name="input" placeholder="Search">
-              <button class="search-button">
-                <i class="fas fa-search"></i></button>
-            </div>
-          </li> <!-- end input -->
-
+        <ul class="left-list">
+          <li><a href="#" class="nav-icon fas fa-bars"></a></li>
+    
+          <li><a href="#" class="fas fa-search"></a></li> 
           <li><a href="https://www.nytimes.com/section/science/space" class="space-and-cosmos" target="_blank">Space &amp; Cosmos</a></li>
-          
-            <!-- middle logo -->
-            <li><a href="https://www.nytimes.com/" class="main-logo" target="_blank"><img src="assets/new_yourk_logo.svg" alt="new_your_logo"></a></li>
-        
-           <!-- rightmost icons in navbar -->
-           <li><button type="button" name="subscribe" class="button subscribe-button">SUBSCRIBE NOW</button></li>
+        </ul>
+        <!-- rightmost icons in navbar -->
+        <ul class="nav-button">
+          <li><button type="button" name="subscribe" class="button subscribe-button">SUBSCRIBE NOW</button></li>
           <li><button type="button" name="login" class="button login-button">LOGIN NOW</button></li>
         </ul>
       </nav>

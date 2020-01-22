@@ -141,25 +141,46 @@ nav {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center; */
-  padding: 7px 15px;
   background-color: white;
   box-shadow: 0 15px 25px -26px black;
-}
-
-.nav-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
-  justify-items: center;
-  align-content: center;
   height: 56px;
+  padding: 0px 15px;
+
 }
 
-.nav-container li {
+.logo {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
+  font-family: newyork;
+  font-size: 3rem;
+  font-weight: 500;
+}
+@font-face {
+  font-family: newyork;
+  src: url(assets/fonts/Chomsky.woff);
+}
+
+nav li {
+  display:inline;
+  list-style:none;
   border-radius: 5px;
-  display: grid;
-  margin: 0 5px;
-  text-transform: uppercase;
-  align-content: center;
+}
+
+nav li:first-child {
+  font-size: 2rem;
+}
+
+ul.left-list {
+  float:left;
+  padding-left: 0px;
+  margin-top: -35px;
+}
+
+ul.nav-button {
+  float: right;
+  margin-top: -40px;
 }
 
 .nav-icon {
@@ -172,12 +193,6 @@ nav {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
-}
-
-.main-logo {
-  width: 195px;
-  height: 26px;
-  margin: 6px auto 0;
 }
 
 .button {
