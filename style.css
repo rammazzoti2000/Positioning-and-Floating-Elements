@@ -350,9 +350,9 @@ div .right-social-container {
   margin-top: 40px;
 }
 
-aside {
-  margin: 50% auto;
-  width: 23%;
+ article > aside {
+  margin: 50% 36px;
+  width: 16%;
   float: right;
 }
 
