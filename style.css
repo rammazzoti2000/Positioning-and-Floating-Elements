@@ -77,6 +77,11 @@ html {
   height: 100%;
 }
 
+@font-face {
+  font-family: newyork;
+  src: url(assets/fonts/Chomsky.woff);
+}
+
 html, body {
   overflow: auto;
 }
@@ -103,9 +108,6 @@ html, body {
 
 .pop-elem,
 .search-input {
-<<<<<<< HEAD
-  font-size: 1.6rem;
-=======
     font-size: 1.6rem;
 }
 
@@ -122,31 +124,18 @@ html, body {
 .article p > a:hover,
 .seventh-article-atag:hover {
     text-decoration: none;
->>>>>>> 84ce051eb0f096402c378713a260ce1313885069
 }
 
 /* navigation bar start */
 header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   background: white;
   top: 0;
   z-index: 1;
 }
 
 nav {
-<<<<<<< HEAD
-  padding: 7px 15px;
-  background-color: white;
-  box-shadow: 0 15px 25px -29px black;
-}
-
-.nav-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
-  justify-items: center;
-  align-content: center;
-  height: 52px;
-=======
   /* display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -166,10 +155,6 @@ nav {
   font-family: newyork;
   font-size: 3rem;
   font-weight: 500;
-}
-@font-face {
-  font-family: newyork;
-  src: url(assets/fonts/Chomsky.woff);
 }
 
 nav li {
@@ -191,7 +176,6 @@ ul.left-list {
 ul.nav-button {
   float: right;
   margin-top: -40px;
->>>>>>> 84ce051eb0f096402c378713a260ce1313885069
 }
 
 .nav-icon {
@@ -229,7 +213,7 @@ ul.nav-button {
 
 /* main section start */
 .title-header {
-  margin: 42px auto 20px;
+  margin: 80px auto 20px;
 }
 
 .h1-container {
@@ -245,10 +229,7 @@ ul.nav-button {
   margin: 0 20px 1rem;
   text-align: left;
   font-size: 3.25rem;
-<<<<<<< HEAD
-=======
   font-family: "georgia"; 
->>>>>>> 84ce051eb0f096402c378713a260ce1313885069
 }
 
 .main-img-container {
@@ -375,6 +356,14 @@ aside {
   float: right;
 }
 
+aside a {
+  margin-bottom: 10px;
+}
+aside a div {
+  width: 22%;
+  float: left;
+}
+
 aside > h2 {
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -382,10 +371,7 @@ aside > h2 {
 }
 
 .editors-pics-link {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 3fr 1fr;
-  align-items: self-end;
+  display: inline-block;
 }
 
 .editors-pics-link > img {
@@ -411,8 +397,16 @@ aside > h2 {
   }
 }
 
+aside div h3 {
+  text-decoration: none;
+  color: #121212;
+}
+
 .editors-pics-link > h3 {
   padding-left: 7px;
+  float: left;
+  width: 63%;
+  text-align: inherit;
 }
 
 /* Subscriptions inline area */
@@ -535,6 +529,11 @@ aside > h2 {
   margin: 0 auto;
 }
 
+.main-extra-container a {
+  text-decoration: none;
+  color: #121212;
+}
+
 .extra-container {
   border-top: 1px solid;
   padding-top: 10px;
@@ -632,15 +631,15 @@ aside > h2 {
 
 footer {
   width: 90%;
-  margin: 40px auto 20px;
+  margin: 0 auto 5%;
   bottom: 0;
   position: sticky;
   clear: both;
+  padding-top: 10%;
 }
 
-#footer-list {
-  display: flex;
-  justify-content: space-evenly;
+#footer-list li {
+  display: inline;
   list-style: none;
 }
 
@@ -648,62 +647,32 @@ footer {
   text-decoration: none;
   color: #666;
   margin: 0 3px;
+  padding: 0 0 0 10px;
 }
 
 #footer-list li a:hover {
   text-decoration: underline;
 }
 
-/* animated search input experimental */
-.search-box {
-  height: auto;
-  border-radius: 100%;
-  font-size: 1.2rem;
-}
-
-.search-input {
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: #333;
-  transition: 0.4s;
-  line-height: 34px;
-  width: 0;
-}
-
-.search-button {
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
+.footer-curtain {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid black;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  width: 100%;
   background-color: white;
-  border: 1px solid;
-  outline: none;
+  font-size: 1.5rem;
 }
 
-.search-box:hover > .search-button {
-  background: #567b95;
-  color: white;
-  border: 1px solid #326891;
-  cursor: pointer;
+.footer-curtain div {
+  width: 97%;
+  text-align: center;
 }
 
-.search-box:hover > .search-input {
-  width: 200px;
-  padding: 0 6px;
-  border-bottom: 1px solid;
-}
-
-@media (max-width: 890px) {
-  .search-box:hover > .search-input {
-    width: 100px;
-  }
+.expand {
+  float: right;
 }
 
 .video-container {
@@ -711,4 +680,12 @@ footer {
   border-bottom: 1px solid lightgray;
   padding: 29px 2px;
   border-top: 1px solid lightgray;
+  
 }
+
+iframe {
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
