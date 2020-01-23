@@ -132,7 +132,7 @@ nav {
   padding: 0 15px;
 }
 
-#logo{
+#logo {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -140,11 +140,6 @@ nav {
   font-family: newyork, sans-serif;
   font-size: 3rem;
   font-weight: 500;
-}
-
-#logo a{
-  text-decoration: none;
-  color: #121212;
 }
 
 nav li {
@@ -621,7 +616,7 @@ aside > h2 {
 
 footer {
   width: 90%;
-  margin: 0 auto 5%;
+  margin: 0 auto 5.5%;
   bottom: 0;
   position: sticky;
   clear: both;
@@ -645,6 +640,11 @@ footer {
 .article p > a:hover,
 .art-title p a:hover {
   text-decoration: none;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #121212;
 }
 
 #footer-list a {
