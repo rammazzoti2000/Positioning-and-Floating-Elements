@@ -132,7 +132,7 @@ nav {
   padding: 0 15px;
 }
 
-.logo {
+#logo{
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -140,6 +140,11 @@ nav {
   font-family: newyork, sans-serif;
   font-size: 3rem;
   font-weight: 500;
+}
+
+#logo a{
+  text-decoration: none;
+  color: #121212;
 }
 
 nav li {
