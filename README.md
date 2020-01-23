@@ -3,7 +3,7 @@
 
 
 
-Remake of an article page from [The New York Times](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0).
+Remake of an article page from [The New York Times](https://rawcdn.githack.com/rammazzoti2000/Positioning-and-Floating-Elements/4e5af8796815b58441148773c40fca19bedbb733/index.html).
 
 ## Built With
 
