@@ -616,6 +616,11 @@ footer {
   padding-top: 10%;
 }
 
+#footer-list {
+  padding: 0;
+  text-align: center;
+}
+
 #footer-list li {
   display: inline;
   list-style: none;
