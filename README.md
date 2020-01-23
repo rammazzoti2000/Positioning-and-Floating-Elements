@@ -1,7 +1,7 @@
 # Positioning-and-Floating-Elements
 > Clone of the New York Times using  flexbox and/or grid positioning techniques 
 
-
+![screenshot](/assets/web_screenshot.png)
 
 Remake of an article page from [The New York Times](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0).
 
