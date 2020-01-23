@@ -686,6 +686,8 @@ iframe {
   border: none;
   display: block;
   margin: 0 auto;
+  width: 90%;
+  height: 315px;
 }
 
 .editors-pics-link > h3:hover,
