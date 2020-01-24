@@ -127,8 +127,8 @@ nav {
   justify-content: space-between;
   align-items: center; */
   background-color: white;
-  box-shadow: 0 15px 25px -26px black;
-  border-bottom: 1px solid gray;
+  box-shadow: rgba(0,0,0,0.08) 0 0 5px 1px;
+  border-bottom: 1px solid lightgray;
   height: 56px;
   padding: 0 15px;
 }
