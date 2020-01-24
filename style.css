@@ -127,7 +127,7 @@ nav {
   justify-content: space-between;
   align-items: center; */
   background-color: white;
-  box-shadow: 0 15px 25px -26px black;
+  border-bottom: 1px solid gray;
   height: 56px;
   padding: 0 15px;
 }
@@ -280,13 +280,14 @@ figure {
 div .right-social-container {
   list-style: none;
   float: right;
+  padding-top: 8px;
 }
 
 aside a {
   margin-bottom: 10px;
 }
 
-section span a {
+section h2 span > a {
   float: right;
   font-family: "arial", sans-serif;
   font-size: small;
