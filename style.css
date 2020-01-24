@@ -127,7 +127,7 @@ nav {
   justify-content: space-between;
   align-items: center; */
   background-color: white;
-  border-bottom: 1px solid gray;
+  box-shadow: 0 15px 25px -26px black;
   height: 56px;
   padding: 0 15px;
 }
@@ -153,8 +153,13 @@ ul.left-list {
   font-size: 1.4rem;
 }
 
+ul.left-list li:first-child {
+  color: #666;
+}
+
 ul.left-list li:nth-child(2) {
   padding-right: 7px;
+  color: #666;
 }
 
 ul.nav-button {
