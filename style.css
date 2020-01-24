@@ -286,6 +286,21 @@ aside a {
   margin-bottom: 10px;
 }
 
+section span a {
+  float: right;
+  font-family: "arial", sans-serif;
+  font-size: small;
+  color: #567b95;
+}
+
+section h2 a {
+  text-decoration: none;
+  color: #121212;
+  font-family: newyork, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
 .right-social-container > a {
   color: black;
   margin-left: 14px;
@@ -312,6 +327,14 @@ aside div h3 {
 .main-extra-container a {
   text-decoration: none;
   color: #121212;
+}
+
+.extra-links a {
+  display: block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #121212;
+  line-height: 2;
 }
 
 .subscriptions p a {
@@ -539,6 +562,10 @@ aside > h2 {
   padding-top: 10px;
 }
 
+.extra-links h3 {
+  font-size: 1.3rem;
+}
+
 /* on hover text-decoration regroup (abstraction) */
 .space-and-cosmos:hover,
 .editors-pics-link > h3:hover {
@@ -633,7 +660,16 @@ footer {
   list-style: none;
 }
 
+.extra-1 p a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 .extra-container a:hover {
+  text-decoration: underline;
+}
+
+.extra-links a:hover {
   text-decoration: underline;
 }
 
@@ -704,41 +740,10 @@ section {
   padding-bottom: 13px;
 }
 
-section h2 a {
-  text-decoration: none;
-  color: #121212;
-  font-family: newyork, sans-serif;
-  font-size: 2.2rem;
-  font-weight: 500;
-}
-
-section span a{
-  float: right;
-  font-family: "arial", sans-serif;
-  font-size: small;
-  color: #567b95;
-}
-
 .extra-links {
   display: inline-block;
   vertical-align: top;
   width: 16%;
-}
-
-.extra-links a {
-  display: block;
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: #121212;
-  line-height: 2;
-}
-
-.extra-links a:hover {
-  text-decoration: underline;
-}
-
-.extra-links h3 {
-  font-size: 1.3rem;
 }
 
 .extra-links:last-child {
@@ -764,12 +769,6 @@ hr {
 
 .extra-1 {
   text-decoration: none;
-
-}
-
-.extra-1 p a {
-  font-size: 1.4rem;
-  font-weight: 600;
 }
 
 .extra-2,
