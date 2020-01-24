@@ -363,7 +363,7 @@ aside div h3 {
   margin-top: 40px;
 }
 
-article > aside {
+.article-global > aside {
   margin: 50% 36px;
   width: 16%;
   float: right;
@@ -616,11 +616,11 @@ aside > h2 {
 
 footer {
   width: 90%;
-  margin: 0 auto 5.5%;
+  margin: 0 auto 5%;
   bottom: 0;
   position: sticky;
   clear: both;
-  padding-top: 10%;
+  padding-top: 5px;
 }
 
 #footer-list {
@@ -693,4 +693,86 @@ iframe {
 .editors-pics-link > h3:hover,
 #footer-list li a:hover {
   text-decoration: underline;
+}
+
+section {
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 2.5;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 13px;
+}
+
+section h2 a {
+  text-decoration: none;
+  color: #121212;
+  font-family: newyork, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+section span a{
+  float: right;
+  font-family: "arial", sans-serif;
+  font-size: small;
+  color: #567b95;
+}
+
+.extra-links {
+  display: inline-block;
+  vertical-align: top;
+  width: 16%;
+}
+
+.extra-links a {
+  display: block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #121212;
+  line-height: 2;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+.extra-links h3 {
+  font-size: 1.3rem;
+}
+
+.extra-links:last-child {
+  border-left: 1px solid lightgray;
+  padding-left: 15px;
+}
+
+hr {
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 2px solid #e2e2e2;
+  content: '';
+  height: 6px;
+  margin-top: 0;
+  clear: both;
+  width: 90%;
+}
+
+.extra-1,
+.extra-2 {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.extra-1 {
+  text-decoration: none;
+
+}
+
+.extra-1 p a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.extra-2,
+.extra-3 {
+  padding-top: 10px;
 }
