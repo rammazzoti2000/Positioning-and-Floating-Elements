@@ -287,19 +287,19 @@ aside a {
   margin-bottom: 10px;
 }
 
-section h2 span > a {
-  float: right;
-  font-family: "arial", sans-serif;
-  font-size: small;
-  color: #567b95;
-}
-
 section h2 a {
   text-decoration: none;
   color: #121212;
   font-family: newyork, sans-serif;
   font-size: 2.2rem;
   font-weight: 500;
+}
+
+section h2 span > a {
+  float: right;
+  font-family: "arial", sans-serif;
+  font-size: small;
+  color: #567b95;
 }
 
 .right-social-container > a {
