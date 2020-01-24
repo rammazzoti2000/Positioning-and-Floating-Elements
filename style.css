@@ -128,6 +128,7 @@ nav {
   align-items: center; */
   background-color: white;
   box-shadow: 0 15px 25px -26px black;
+  border-bottom: 1px solid gray;
   height: 56px;
   padding: 0 15px;
 }
